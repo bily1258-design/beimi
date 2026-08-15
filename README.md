@@ -26,7 +26,7 @@ https://cdn.jsdelivr.net/gh/bily1258-design/beimi@main/output/subscribe_plain.tx
 ## 🔧 工作流程
 
 1. **米贝爬虫** (`enhanced_crawler.py`): 爬 mibei77.com 最新文章 → 提取订阅链接 → 下载节点
-2. **多源合并** (`merge_subscriptions.py`): 米贝 + 远程源 (v2raynode / FreeNodes / tonygyf 等) → 解析 (vless/vmess/trojan/ss/hysteria2) → 按 server+port 去重 → 输出 `output/clash.yaml` + `output/subscribe.txt`
+2. **多源合并** (`merge_subscriptions.py`): 米贝 + 远程源 (v2raynode / FreeNodes / tonygyf 等) → 解析 (vless/vmess/trojan/ss/hysteria2) → 按 server+port 去重 → **地区过滤 (仅保留 🇺🇸美国 / 🇯🇵日本 / 🇭🇰香港 / 🇹🇼台湾 / 🇸🇬新加坡)** → 输出 `output/clash.yaml` + `output/subscribe.txt`
 3. **GitHub Actions**: 每天 8:00 / 20:00 (北京时间) 自动执行并提交
 
 ## ⚙️ 改订阅源

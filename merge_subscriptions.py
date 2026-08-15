@@ -367,6 +367,64 @@ def parse_yaml_proxies(text):
     return []
 
 
+# ---------- 地区过滤: 只保留 美国/日本/香港/台湾/新加坡 ----------
+
+REGION_PATTERNS = {
+    # 美国
+    "US": {
+        "name": re.compile(
+            r"美国|美利坚|🇺🇸|\bus\b|\busa\b|united\s*states|\bamerica\b|"
+            r"硅谷|洛杉矶|纽约|西雅图|芝加哥|达拉斯|圣何塞|凤凰城|亚特兰大|"
+            r"休斯顿|迈阿密|旧金山|波士顿|费城|丹佛|拉斯维加斯|"
+            r"silicon\s*valley|los\s*angeles|new\s*york|seattle|chicago|dallas|"
+            r"san\s*jose|phoenix|atlanta|houston|miami|san\s*francisco|"
+            r"boston|philadelphia|denver|las\s*vegas", re.I),
+        "server": re.compile(
+            r"(^|[^a-z])(us|usa)([\d\-]|\.|$)|unitedstates|\.us($|[^a-z])|us\d+", re.I),
+    },
+    # 日本
+    "JP": {
+        "name": re.compile(
+            r"日本|🇯🇵|\bjp\b|japan|东京|大阪|名古屋|福冈|札幌|冲绳|"
+            r"tokyo|osaka|nagoya|fukuoka|sapporo|okinawa", re.I),
+        "server": re.compile(
+            r"(^|[^a-z])(jp|japan)([\d\-]|\.|$)|jp\d+", re.I),
+    },
+    # 香港
+    "HK": {
+        "name": re.compile(
+            r"香港|🇭🇰|\bhk\b|hksar|hong\s*kong|hongkong|港服|港区|\b港\b", re.I),
+        "server": re.compile(
+            r"(^|[^a-z])hk([\d\-]|\.|$)|hongkong", re.I),
+    },
+    # 台湾
+    "TW": {
+        "name": re.compile(
+            r"台湾|臺灣|🇹🇼|\btw\b|taiwan|台北|台中|台南|高雄|新竹|桃园|"
+            r"taipei|taichung|tainan|kaohsiung|hsinchu|taoyuan", re.I),
+        "server": re.compile(
+            r"(^|[^a-z])(tw|taiwan)([\d\-]|\.|$)|taiwan|tw\d+", re.I),
+    },
+    # 新加坡
+    "SG": {
+        "name": re.compile(
+            r"新加坡|狮城|🇸🇬|\bsg\b|singapore", re.I),
+        "server": re.compile(
+            r"(^|[^a-z])(sg|singapore)([\d\-]|\.|$)|singapore|\.sg($|[^a-z])|sg\d+", re.I),
+    },
+}
+
+
+def match_region(proxy):
+    """按节点名 + 服务器域名判断地区, 命中保留区(美/日/港/台/新)返回地区码, 否则 None"""
+    name = str(proxy.get("name", ""))
+    server = str(proxy.get("server", ""))
+    for region, pats in REGION_PATTERNS.items():
+        if pats["name"].search(name) or pats["server"].search(server):
+            return region
+    return None
+
+
 # ---------- 主流程 ----------
 
 def main():
@@ -376,6 +434,7 @@ def main():
 
     all_proxies = []      # clash proxy dict 列表
     uri_order = []        # 原始 URI 顺序(用于 subscribe.txt 去重)
+    uri_proxies = {}      # URI -> 解析出的 proxy (供 b64/plain 订阅同步地区过滤)
     seen_uri = set()
     seen_key = set()
 
@@ -394,6 +453,7 @@ def main():
                         uri_order.append(u)
                         p = uri_to_proxy(u, len(uri_order))
                         if p:
+                            uri_proxies[u] = p
                             all_proxies.append(p)
             else:
                 print(f"  ⚠️ 本地源 {f} 无可用节点(米贝爬取可能失败, 不影响其他源)")
@@ -429,6 +489,7 @@ def main():
                 uri_order.append(u)
                 p = uri_to_proxy(u, len(uri_order))
                 if p:
+                    uri_proxies[u] = p
                     all_proxies.append(p)
 
     # 3) 按 (type, server, port) 去重
@@ -447,7 +508,25 @@ def main():
             dedup.append(p)
     all_proxies = dedup
 
-    print(f"\n=== 汇总: {len(all_proxies)} 个唯一节点 ===")
+    # 3b) 地区过滤: 只保留 美国/日本/香港/台湾/新加坡 (按节点名 + 服务器域名判定)
+    before_region = len(all_proxies)
+    region_stats = {}
+    filtered = []
+    for p in all_proxies:
+        r = match_region(p)
+        if r:
+            region_stats[r] = region_stats.get(r, 0) + 1
+            filtered.append(p)
+    all_proxies = filtered
+    # 同步过滤 URI 列表: subscribe_b64.txt / subscribe_plain.txt 只输出保留地区节点。
+    # 按 URI 自身解析结果判定地区 (名称含地区标识), 不能用 (server,port) 匹配——
+    # 反代服务器被多地区共用 (如 oplosgru-c.catcat321.com 挂 US/BR 多节点) 会混入非保留区。
+    uri_order = [u for u, pp in uri_proxies.items() if match_region(pp)]
+
+    print(f"\n=== 汇总: {before_region} 个唯一节点 → 地区过滤后 {len(all_proxies)} 个 "
+          f"(🇺🇸美国{region_stats.get('US', 0)} / 🇯🇵日本{region_stats.get('JP', 0)} "
+          f"/ 🇭🇰香港{region_stats.get('HK', 0)} / 🇹🇼台湾{region_stats.get('TW', 0)} "
+          f"/ 🇸🇬新加坡{region_stats.get('SG', 0)}) ===")
 
     if not all_proxies:
         print("!! 没有拿到任何节点, 不覆盖 output/")
