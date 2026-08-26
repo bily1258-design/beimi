@@ -2388,7 +2388,7 @@ proxies:
   tls: true
   servername: ezaccess1-slv-ezaccess1-f7d0.up.railway.app
   client-fingerprint: chrome
-- name: 🇭🇰-908
+- name: 🇭🇰-907
   type: vless
   server: 91.193.58.117
   port: 443
@@ -2464,7 +2464,7 @@ proxies:
   network: tcp
   tls: true
   servername: ''
-- name: 🇭🇰-950
+- name: 🇭🇰-949
   type: vless
   server: 91.193.58.42
   port: 80
@@ -2527,7 +2527,7 @@ proxies:
     path: /
     headers:
       Host: zero.csmaster.ggff.net
-- name: 🇺🇸-976
+- name: 🇺🇸-975
   type: vless
   server: 185.193.29.123
   port: 443
@@ -2540,7 +2540,7 @@ proxies:
       Host: notls.lukongtou.eu.org
   tls: true
   servername: notls.lukongtou.eu.org
-- name: 🇺🇸-980
+- name: 🇺🇸-979
   type: vless
   server: cf.090227.xyz
   port: 443
@@ -2581,7 +2581,7 @@ proxies:
   sni: https://t.me/WangCai2🇨🇳
   servername: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰-1001
+- name: 🇭🇰-1000
   type: vless
   server: 104.171.136.112
   port: 2200
@@ -2691,7 +2691,7 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.gq
-- name: 🇭🇰-1063
+- name: 🇭🇰-1062
   type: vless
   server: 91.193.58.93
   port: 80
@@ -2724,7 +2724,7 @@ proxies:
   udp: true
   sni: neutral-quail.rooster465.autos
   servername: neutral-quail.rooster465.autos
-- name: 🇯🇵-1079
+- name: 🇯🇵-1078
   type: vless
   server: 38.47.96.220
   port: 11424
@@ -2746,7 +2746,7 @@ proxies:
   sni: hopp-legend-se.roxa.org
   servername: hopp-legend-se.roxa.org
   skip-cert-verify: true
-- name: US美国-1089
+- name: US美国-1088
   type: vless
   server: est1.nihaovpn.ru
   port: 443
@@ -2813,7 +2813,7 @@ proxies:
   tls: true
   servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
   client-fingerprint: chrome
-- name: US美国-1106
+- name: US美国-1105
   type: trojan
   server: 140.248.185.253
   port: 443
@@ -2906,7 +2906,7 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: US美国-1148
+- name: US美国-1147
   type: vless
   server: 31.76.5.26
   port: 443
@@ -3094,7 +3094,7 @@ proxies:
   reality-opts:
     public-key: HsoG0C19O-NY_EcFpK0ybZv9lFol0MjDJLzjDzWAGXs
     short-id: 'd79d3dc3816c329d'
-- name: 🇯🇵-1264
+- name: 🇯🇵-1263
   type: vless
   server: 89.125.244.28
   port: 443
@@ -3163,7 +3163,7 @@ proxies:
   sni: www.microsoft.com
   servername: www.microsoft.com
   skip-cert-verify: true
-- name: 🇭🇰-1281
+- name: 🇭🇰-1280
   type: vless
   server: 91.193.58.141
   port: 443
@@ -3176,7 +3176,7 @@ proxies:
       Host: jamph131-1228.pages.dev
   tls: true
   servername: jamph131-1228.pages.dev
-- name: 🇭🇰-1290
+- name: 🇭🇰-1289
   type: vless
   server: 91.193.58.92
   port: 80
@@ -3283,7 +3283,7 @@ proxies:
   reality-opts:
     public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
     short-id: 'f63805c3ecc7a483'
-- name: 🇺🇸-1350
+- name: 🇺🇸-1349
   type: vless
   server: support.zoom.us
   port: 443
@@ -3391,6 +3391,13 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: 'c39cc7310a'
+- name: 🇺🇸US_401
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+  udp: true
 - name: 🇺🇸US_425
   type: vless
   server: 104.16.148.244
@@ -3908,7 +3915,7 @@ proxies:
   tls: true
   servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
   client-fingerprint: chrome
-- name: 🇭🇰-1633
+- name: 🇭🇰-1632
   type: vless
   server: 91.193.58.179
   port: 80
@@ -6301,19 +6308,15 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: ajax.microsoft.com
-- name: 🇭🇰_HK_中国香港-2511
+- name: 🇺🇸_US_美国-2511
   type: vmess
-  server: n1747624260.4u9ma.icu
+  server: guanwang.awsno.com
   port: 443
-  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
+  network: tcp
   tls: true
   servername: ''
 - name: 🇯🇵_JP_日本->🇸🇬_SG_新加坡
@@ -6325,7 +6328,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 🇭🇰_HK_中国香港-2513
+- name: 🇭🇰_HK_中国香港-2514
   type: vmess
   server: 47.76.127.88
   port: 5566
@@ -6782,25 +6785,25 @@ proxy-groups:
   - 香港 27
   - 🇺🇸US_152
   - 🇺🇸US_647
-  - 🇭🇰-908
+  - 🇭🇰-907
   - 🇺🇸US_382
   - 🇺🇸US_167
   - 🇺🇸US_630
   - 🇺🇸US_553
   - 🇺🇸US_30
   - 🎗️98@oneclickvpnkeys&packetEncoding=xudp&sni=yahoo.com&fp=chrome&flow=xtls-rprx-vision&sid=c39cc7310a&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg#🇺🇸US_348
-  - 🇭🇰-950
+  - 🇭🇰-949
   - 🇺🇸US_95
   - 🇸🇬SG_69
   - 🇺🇸US_580
   - 美国_9
   - 🇸🇬SG_71
-  - 🇺🇸-976
-  - 🇺🇸-980
+  - 🇺🇸-975
+  - 🇺🇸-979
   - 未知 SS-259
   - US VLESS-1596
   - 香港 05
-  - 🇭🇰-1001
+  - 🇭🇰-1000
   - 🇸🇬SG_81
   - 未知 VLESS-705
   - 🇸🇬SG_66
@@ -6810,17 +6813,17 @@ proxy-groups:
   - 🇺🇸US_18
   - 🇺🇸US_587
   - 🇺🇸US_301
-  - 🇭🇰-1063
+  - 🇭🇰-1062
   - 香港 09
   - 🇺🇸US_427
-  - 🇯🇵-1079
+  - 🇯🇵-1078
   - 🇺🇸US_586
-  - US美国-1089
+  - US美国-1088
   - 香港 45
   - 🇸🇬
   - US VLESS-1644
   - 🇺🇸US_125
-  - US美国-1106
+  - US美国-1105
   - 🇺🇸US_634
   - 🇺🇸US_598
   - 香港 23
@@ -6828,7 +6831,7 @@ proxy-groups:
   - 🇸🇬SG_40
   - 美国_10
   - 🇺🇸US_291
-  - US美国-1148
+  - US美国-1147
   - 🇺🇸US_626
   - US VLESS-1662
   - 🇸🇬SG_1
@@ -6847,14 +6850,14 @@ proxy-groups:
   - US VLESS-1635
   - US VLESS-1654
   - 🇹🇼TW_6
-  - 🇯🇵-1264
+  - 🇯🇵-1263
   - 🇸🇬SG_92
   - US VLESS-1587
   - 🇺🇸US_491
   - 🇹🇼TW_18
   - 🇺🇸US_111
-  - 🇭🇰-1281
-  - 🇭🇰-1290
+  - 🇭🇰-1280
+  - 🇭🇰-1289
   - 🇯🇵JP_4
   - 🇸🇬_SG_新加坡
   - 🇺🇸US_600
@@ -6864,7 +6867,7 @@ proxy-groups:
   - 美国_1
   - 香港 59
   - 🇺🇸US_442
-  - 🇺🇸-1350
+  - 🇺🇸-1349
   - 🇸🇬SG_57
   - US VLESS-1567
   - 🇺🇸US_601
@@ -6873,6 +6876,7 @@ proxy-groups:
   - 🇫🇷FR_959
   - 🇯🇵JP_27
   - 🇺🇸US_300
+  - 🇺🇸US_401
   - 🇺🇸US_425
   - 🇺🇸_US_美国
   - 🇯🇵JP_30
@@ -6920,7 +6924,7 @@ proxy-groups:
   - 🇸🇬SG_82
   - 🇸🇬SG_34
   - 🇯🇵JP_16
-  - 🇭🇰-1633
+  - 🇭🇰-1632
   - 美国_48
   - 🇺🇸US_578
   - 🇸🇬SG_27
@@ -7140,9 +7144,9 @@ proxy-groups:
   - 美国(yudou789.top 玉豆免费节点)-2493
   - 🇸🇬 SG新加坡
   - 🇺🇸 US美國
-  - 🇭🇰_HK_中国香港-2511
+  - 🇺🇸_US_美国-2511
   - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港-2513
+  - 🇭🇰_HK_中国香港-2514
   - 未知 VMESS-1294 | free-nodes
   - 未知 VMESS-1295 | free-nodes
   - 未知 VMESS-1296 | free-nodes
@@ -7365,25 +7369,25 @@ proxy-groups:
   - 香港 27
   - 🇺🇸US_152
   - 🇺🇸US_647
-  - 🇭🇰-908
+  - 🇭🇰-907
   - 🇺🇸US_382
   - 🇺🇸US_167
   - 🇺🇸US_630
   - 🇺🇸US_553
   - 🇺🇸US_30
   - 🎗️98@oneclickvpnkeys&packetEncoding=xudp&sni=yahoo.com&fp=chrome&flow=xtls-rprx-vision&sid=c39cc7310a&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg#🇺🇸US_348
-  - 🇭🇰-950
+  - 🇭🇰-949
   - 🇺🇸US_95
   - 🇸🇬SG_69
   - 🇺🇸US_580
   - 美国_9
   - 🇸🇬SG_71
-  - 🇺🇸-976
-  - 🇺🇸-980
+  - 🇺🇸-975
+  - 🇺🇸-979
   - 未知 SS-259
   - US VLESS-1596
   - 香港 05
-  - 🇭🇰-1001
+  - 🇭🇰-1000
   - 🇸🇬SG_81
   - 未知 VLESS-705
   - 🇸🇬SG_66
@@ -7393,17 +7397,17 @@ proxy-groups:
   - 🇺🇸US_18
   - 🇺🇸US_587
   - 🇺🇸US_301
-  - 🇭🇰-1063
+  - 🇭🇰-1062
   - 香港 09
   - 🇺🇸US_427
-  - 🇯🇵-1079
+  - 🇯🇵-1078
   - 🇺🇸US_586
-  - US美国-1089
+  - US美国-1088
   - 香港 45
   - 🇸🇬
   - US VLESS-1644
   - 🇺🇸US_125
-  - US美国-1106
+  - US美国-1105
   - 🇺🇸US_634
   - 🇺🇸US_598
   - 香港 23
@@ -7411,7 +7415,7 @@ proxy-groups:
   - 🇸🇬SG_40
   - 美国_10
   - 🇺🇸US_291
-  - US美国-1148
+  - US美国-1147
   - 🇺🇸US_626
   - US VLESS-1662
   - 🇸🇬SG_1
@@ -7430,14 +7434,14 @@ proxy-groups:
   - US VLESS-1635
   - US VLESS-1654
   - 🇹🇼TW_6
-  - 🇯🇵-1264
+  - 🇯🇵-1263
   - 🇸🇬SG_92
   - US VLESS-1587
   - 🇺🇸US_491
   - 🇹🇼TW_18
   - 🇺🇸US_111
-  - 🇭🇰-1281
-  - 🇭🇰-1290
+  - 🇭🇰-1280
+  - 🇭🇰-1289
   - 🇯🇵JP_4
   - 🇸🇬_SG_新加坡
   - 🇺🇸US_600
@@ -7447,7 +7451,7 @@ proxy-groups:
   - 美国_1
   - 香港 59
   - 🇺🇸US_442
-  - 🇺🇸-1350
+  - 🇺🇸-1349
   - 🇸🇬SG_57
   - US VLESS-1567
   - 🇺🇸US_601
@@ -7456,6 +7460,7 @@ proxy-groups:
   - 🇫🇷FR_959
   - 🇯🇵JP_27
   - 🇺🇸US_300
+  - 🇺🇸US_401
   - 🇺🇸US_425
   - 🇺🇸_US_美国
   - 🇯🇵JP_30
@@ -7503,7 +7508,7 @@ proxy-groups:
   - 🇸🇬SG_82
   - 🇸🇬SG_34
   - 🇯🇵JP_16
-  - 🇭🇰-1633
+  - 🇭🇰-1632
   - 美国_48
   - 🇺🇸US_578
   - 🇸🇬SG_27
@@ -7723,9 +7728,9 @@ proxy-groups:
   - 美国(yudou789.top 玉豆免费节点)-2493
   - 🇸🇬 SG新加坡
   - 🇺🇸 US美國
-  - 🇭🇰_HK_中国香港-2511
+  - 🇺🇸_US_美国-2511
   - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港-2513
+  - 🇭🇰_HK_中国香港-2514
   - 未知 VMESS-1294 | free-nodes
   - 未知 VMESS-1295 | free-nodes
   - 未知 VMESS-1296 | free-nodes
