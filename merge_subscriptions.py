@@ -343,6 +343,130 @@ def uri_to_proxy(uri, idx):
     return None
 
 
+def proxy_to_uri(p):
+    """把 clash proxy dict 反序列化回 URI (与 uri_to_proxy 互逆)。
+
+    供 subscribe_b64/plain 使用: 从地区过滤+去重后的 all_proxies 生成,
+    保证 b64 订阅与 clash.yaml 节点集合完全一致。反序列化失败返回 None
+    (该节点只进 clash.yaml, 不进 b64)。
+    """
+    from urllib.parse import quote
+    try:
+        name = str(p.get("name", ""))
+        frag = quote(name, safe="") if name else ""
+        server = p.get("server", "")
+        port = p.get("port", 0)
+        t = p.get("type", "")
+        if not server or not port:
+            return None
+
+        if t == "ss":
+            # SIP002: ss://base64(method:password)@host:port#name
+            secret = base64.b64encode(
+                f"{p.get('cipher','')}:{p.get('password','')}".encode()).decode("ascii")
+            u = f"ss://{secret}@{server}:{port}"
+            # 尽力还原 v2ray-plugin (v2rayNG 支持 SIP002 plugin 参数)
+            if p.get("plugin") == "v2ray-plugin":
+                opts = p.get("plugin-opts", {})
+                host = opts.get("host", server)
+                mode = opts.get("mode", "websocket")
+                tls = "true" if opts.get("tls") else "false"
+                u += f"/?plugin=v2ray-plugin%3Bmode%3D{mode}%3Btls%3D{tls}%3Bhost%3D{quote(host, safe='')}"
+            return u + (f"#{frag}" if frag else "")
+
+        if t == "vmess":
+            j = {
+                "v": "2", "ps": name, "add": server, "port": str(port),
+                "id": p.get("uuid", ""), "aid": str(p.get("alterId", 0)),
+                "scy": "auto", "net": p.get("network", "tcp"),
+                "type": "none", "host": "", "path": "",
+                "tls": "tls" if p.get("tls") else "",
+            }
+            net = p.get("network", "tcp")
+            if net == "ws":
+                ws = p.get("ws-opts", {})
+                j["host"] = ws.get("headers", {}).get("Host", "")
+                j["path"] = ws.get("path", "")
+            elif net == "h2":
+                h2 = p.get("h2-opts", {})
+                j["host"] = h2.get("host", "")
+                j["path"] = h2.get("path", "")
+            elif net == "grpc":
+                j["host"] = p.get("grpc-opts", {}).get("grpc-service-name", "")
+                j["path"] = "grpc"
+            if p.get("servername"):
+                j["sni"] = p["servername"]
+            if p.get("client-fingerprint"):
+                j["fp"] = p["client-fingerprint"]
+            raw = base64.b64encode(json.dumps(j, ensure_ascii=False).encode()).decode("ascii")
+            return f"vmess://{raw}"
+
+        if t == "vless":
+            q = []
+            net = p.get("network", "tcp")
+            if net == "ws":
+                ws = p.get("ws-opts", {})
+                q.append(f"type=ws&path={quote(ws.get('path','/'), safe='')}"
+                         f"&host={quote(ws.get('headers',{}).get('Host',''), safe='')}")
+            elif net == "grpc":
+                q.append(f"type=grpc&serviceName={quote(p.get('grpc-opts',{}).get('grpc-service-name',''), safe='')}")
+            if p.get("tls"):
+                sec = "reality" if p.get("reality-opts") else "tls"
+                q.append(f"security={sec}")
+                if p.get("servername"):
+                    q.append(f"sni={quote(p['servername'], safe='')}")
+                if p.get("client-fingerprint"):
+                    q.append(f"fp={quote(p['client-fingerprint'], safe='')}")
+                if p.get("flow"):
+                    q.append(f"flow={quote(p['flow'], safe='')}")
+                ro = p.get("reality-opts")
+                if ro:
+                    if ro.get("public-key"):
+                        q.append(f"pbk={quote(ro['public-key'], safe='')}")
+                    if ro.get("short-id"):
+                        q.append(f"sid={quote(ro['short-id'], safe='')}")
+            u = f"vless://{p.get('uuid','')}@{server}:{port}"
+            if q:
+                u += "?" + "&".join(q)
+            return u + (f"#{frag}" if frag else "")
+
+        if t == "trojan":
+            q = []
+            net = p.get("network", "tcp")
+            if net == "ws":
+                ws = p.get("ws-opts", {})
+                q.append(f"type=ws&path={quote(ws.get('path','/'), safe='')}"
+                         f"&host={quote(ws.get('headers',{}).get('Host',''), safe='')}")
+            if p.get("servername"):
+                q.append(f"sni={quote(p['servername'], safe='')}")
+            if p.get("skip-cert-verify"):
+                q.append("allowInsecure=1")
+            ro = p.get("reality-opts")
+            if ro and ro.get("public-key"):
+                q.append(f"security=reality&pbk={quote(ro['public-key'], safe='')}")
+                if ro.get("short-id"):
+                    q.append(f"sid={quote(ro['short-id'], safe='')}")
+            u = f"trojan://{quote(p.get('password',''), safe='')}@{server}:{port}"
+            if q:
+                u += "?" + "&".join(q)
+            return u + (f"#{frag}" if frag else "")
+
+        if t == "hysteria2":
+            q = []
+            if p.get("servername"):
+                q.append(f"sni={quote(p['servername'], safe='')}")
+            if p.get("skip-cert-verify"):
+                q.append("insecure=1")
+            u = f"hysteria2://{quote(p.get('password',''), safe='')}@{server}:{port}"
+            if q:
+                u += "?" + "&".join(q)
+            return u + (f"#{frag}" if frag else "")
+
+        return None
+    except Exception:
+        return None
+
+
 # ---------- clash yaml 源 ----------
 
 def parse_yaml_proxies(text):
@@ -563,15 +687,25 @@ def main():
     print(f"✔ {out_dir}/subscribe.txt 已生成 (Clash/Mihomo YAML, {len(all_proxies)} 节点)")
 
     # 5b) subscribe_b64.txt: 整体 base64 URI 订阅 (v2rayNG 等通用客户端)
-    b64_all = base64.b64encode("\n".join(uri_order).encode("utf-8")).decode("ascii")
+    #    从地区过滤+去重后的 all_proxies 反序列化回 URI —— 与 clash.yaml 节点
+    #    集合完全一致 (旧逻辑只收 URI 文本源节点, 丢 yaml 大源且未按 key 去重)。
+    b64_uris = []
+    for _p in all_proxies:
+        _u = proxy_to_uri(_p)
+        if _u and _u not in b64_uris:
+            b64_uris.append(_u)
+    if not b64_uris:
+        # 兜底: 全部反序列化失败时退回旧逻辑, 至少不输出空文件
+        b64_uris = uri_order
+    b64_all = base64.b64encode("\n".join(b64_uris).encode("utf-8")).decode("ascii")
     # 分块每 76 字符换行 (标准 MIME base64, 客户端兼容性最好)
     b64_lines = "\n".join(b64_all[i:i+76] for i in range(0, len(b64_all), 76))
     with open(os.path.join(out_dir, "subscribe_b64.txt"), "w", encoding="utf-8") as f:
         f.write(b64_lines + "\n")
     # 同时保留明文 URI 版, 方便调试/直接导入 v2rayNG
     with open(os.path.join(out_dir, "subscribe_plain.txt"), "w", encoding="utf-8") as f:
-        f.write("\n".join(uri_order) + "\n")
-    print(f"✔ {out_dir}/subscribe_b64.txt 已生成 ({len(uri_order)} 行 URI, Base64)")
+        f.write("\n".join(b64_uris) + "\n")
+    print(f"✔ {out_dir}/subscribe_b64.txt 已生成 ({len(b64_uris)} 行 URI, Base64, 与 clash.yaml 节点一致)")
     print(f"✔ {out_dir}/subscribe_plain.txt 已生成")
 
     # 6) 统计
