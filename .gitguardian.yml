@@ -1,0 +1,11 @@
+# GitGuardian 豁免配置
+# 本仓库是免费代理节点订阅聚合器:
+# output/ 与根目录 subscription.txt 内的 "password/uuid" 是公开的代理节点连接凭据,
+# 本身就是要公开分发的内容, 不是真实 secret, GitGuardian 检测属于误报。
+version: 2
+
+matches-ignore:
+  - name: "免费节点订阅 output/ 目录(公开节点密码, 误报)"
+    filename: (^|/)output/
+  - name: "米贝爬取原文 subscription.txt(公开节点密码, 误报)"
+    filename: ^subscription\.txt$
