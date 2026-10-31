@@ -3,172 +3,447 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: JP日本(mibei77.com 米贝节点分享)
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffp%3Dchrome'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)
-  type: vless
-  server: 134.185.81.5
-  port: 47881
-  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.tesla.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
-    short-id: '38d72071'
 - name: US美国(mibei77.com 米贝节点分享)
-  type: vless
-  server: 104.19.45.195
+  type: trojan
+  server: 104.18.42.190
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F%3FTELEGRAM-TOOTFFARANGI'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-2
+  type: trojan
+  server: 104.17.221.194
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-3
+  type: trojan
+  server: 104.17.145.145
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-4
+  type: trojan
+  server: 104.17.49.122
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-5
-  type: vless
-  server: 104.17.147.22
+  type: trojan
+  server: 104.17.117.104
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-6
-  type: vless
-  server: 172.64.144.100
+  type: trojan
+  server: 104.26.3.162
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-7
-  type: vless
-  server: 43.206.159.216
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-7
+  type: trojan
+  server: 172.67.74.177
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-8
-  type: vless
-  server: 104.17.29.46
+  type: trojan
+  server: 172.67.67.89
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-9
-  type: vless
-  server: 193.36.95.34
+  type: trojan
+  server: 104.25.60.205
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-10
-  type: vless
-  server: 903.rtgpu.com
+  type: trojan
+  server: 172.67.94.180
   port: 443
-  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Fnmd2'
+    path: '%2Fassignment'
     headers:
       Host: ''
-  tls: true
-  servername: ''
+- name: US美国(mibei77.com 米贝节点分享)-11
+  type: trojan
+  server: 172.67.89.103
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-12
+  type: trojan
+  server: 172.67.203.46
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: www.cordweave.com
+- name: US美国(mibei77.com 米贝节点分享)-13
+  type: trojan
+  server: 104.17.148.111
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-14
-  type: vless
-  server: 188.240.213.98
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-19
-  type: vless
-  server: 194.127.192.138
+  type: trojan
+  server: 104.17.135.68
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffp%3Dchrome'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: US美国(mibei77.com 米贝节点分享)-22
-  type: vless
-  server: 103.102.228.113
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
       Host: ''
-  tls: true
-  servername: vp58.cc.cd
-  client-fingerprint: chrome
+- name: US美国(mibei77.com 米贝节点分享)-15
+  type: trojan
+  server: 104.19.154.200
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-16
+  type: trojan
+  server: 104.17.28.254
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-17
+  type: trojan
+  server: 104.19.43.102
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-18
+  type: trojan
+  server: 104.24.144.224
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-19
+  type: trojan
+  server: 104.17.110.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-20
+  type: trojan
+  server: 104.19.0.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-21
+  type: trojan
+  server: 104.16.244.188
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-22
+  type: trojan
+  server: 104.17.61.37
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-23
+  type: trojan
+  server: 104.17.145.43
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-24
+  type: trojan
+  server: 104.18.0.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-25
+  type: trojan
+  server: 104.17.28.10
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-26
+  type: trojan
+  server: 104.19.53.114
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-27
+  type: trojan
+  server: 162.159.45.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-28
+  type: trojan
+  server: 104.16.245.194
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-29
+  type: trojan
+  server: 104.17.119.105
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-30
+  type: trojan
+  server: 104.17.155.44
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-31
+  type: trojan
+  server: 104.19.56.198
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-32
+  type: trojan
+  server: 104.16.240.177
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-33
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  network: xhttp
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+- name: US美国(mibei77.com 米贝节点分享)-34
+  type: vless
+  server: 8.35.211.73
+  port: 2087
+  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2Fresource'
+    headers:
+      Host: d39333476.pages.dev
+  tls: true
+  servername: d39333476.pages.dev
+  client-fingerprint: chrome
+- name: US美国(mibei77.com 米贝节点分享)-35
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -177,970 +452,906 @@ proxies:
   network: xhttp
   tls: true
   servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-- name: US美国(mibei77.com 米贝节点分享)-29
-  type: vless
-  server: 2.26.91.240
+- name: US美国(mibei77.com 米贝节点分享)-36
+  type: trojan
+  server: 104.17.17.238
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-32
-  type: vless
-  server: 194.55.164.118
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-37
+  type: trojan
+  server: 104.19.46.152
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-34
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 30892
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: us1p1.xn--ghq880n3na965a.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
-    short-id: '3d31326f95'
-- name: US美国(mibei77.com 米贝节点分享)-35
-  type: vless
-  server: 13.143.182.82
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-38
   type: vless
-  server: 162.35.127.65
+  server: 13.143.180.104
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
   udp: true
+  network: tcp
+  tls: true
+  servername: s12.bsh-net.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
+    short-id: '51079f144d661484'
+- name: US美国(mibei77.com 米贝节点分享)-39
+  type: vless
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  udp: true
+  network: tcp
+  tls: true
+  servername: sg2-8sb.6121999.dpdns.org
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: '6ba85179e30d4fc2'
+- name: US美国(mibei77.com 米贝节点分享)-40
+  type: trojan
+  server: 104.18.72.213
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-43
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 54528
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-41
+  type: trojan
+  server: 104.16.65.1
+  port: 443
+  password: humanity
   udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: '54cca3c1c1c7'
-- name: US美国(mibei77.com 米贝节点分享)-44
-  type: vless
-  server: 38.145.220.58
-  port: 2093
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: '8a9725533854a7e8'
-- name: US美国(mibei77.com 米贝节点分享)-45
-  type: vless
-  server: 208.84.100.209
-  port: 8080
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-42
+  type: trojan
+  server: 172.64.150.181
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-43
+  type: trojan
+  server: 172.64.229.7
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-44
+  type: trojan
+  server: 104.17.191.193
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-45
+  type: trojan
+  server: 104.19.212.207
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-46
+  type: trojan
+  server: 104.18.46.127
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-47
+  type: trojan
+  server: 104.17.167.134
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
     headers:
       Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-48
-  type: vless
-  server: 45.61.149.205
-  port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  type: trojan
+  server: 104.19.48.73
+  port: 443
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-49
+  type: trojan
+  server: 104.16.144.215
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-50
-  type: vless
-  server: 167.172.183.195
-  port: 2096
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  type: trojan
+  server: 104.19.34.37
+  port: 443
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
       Host: ''
-  tls: true
-  servername: edge.yzkvm.top
+- name: US美国(mibei77.com 米贝节点分享)-51
+  type: trojan
+  server: 104.17.162.3
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-52
+  type: trojan
+  server: 162.159.58.65
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-53
+  type: trojan
+  server: 104.18.38.127
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-54
+  type: trojan
+  server: 104.17.159.71
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-55
+  type: trojan
+  server: 172.64.154.144
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-56
-  type: vless
-  server: 104.18.33.121
+  type: trojan
+  server: 104.18.223.253
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)
-  type: vless
-  server: 103.253.43.172
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-57
+  type: trojan
+  server: 104.16.251.219
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-58
+  type: trojan
+  server: 172.64.52.127
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-59
+  type: trojan
+  server: 198.41.216.1
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-60
-  type: vless
-  server: app-sh-185.spbstudentlife.com
+  type: trojan
+  server: 104.17.116.75
   port: 443
-  uuid: 074690f9-cb30-44f5-84e5-f3ce8fc6cf29
+  password: humanity
   udp: true
-  network: tcp
-  tls: true
-  servername: assets-sh-185.spbstudentlife.com
-  flow: xtls-rprx-vision
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rM3p4mL72kcpvnxVRYxl5J0zPbxE2U3iZua0F29SHTQ
-    short-id: '8d942904d3e87323'
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-61
-  type: vless
-  server: 141.98.41.20
+  type: trojan
+  server: 104.18.255.167
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: fp%3Dunsafe
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-62
-  type: vless
-  server: 203.88.117.227
+  type: trojan
+  server: 162.159.150.241
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-64
-  type: vless
-  server: 104.17.187.57
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-63
+  type: trojan
+  server: 38.207.177.204
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-64
+  type: trojan
+  server: 179.255.127.200
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-65
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 35544
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: iosapps.itunes.apple.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: '25c79e5856c7'
-- name: SG新加坡(mibei77.com 米贝节点分享)-66
-  type: vless
-  server: 178.93.160.236
+  type: trojan
+  server: 179.255.136.189
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-66
+  type: trojan
+  server: 179.255.127.82
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-67
-  type: vless
-  server: 185.148.104.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: trojan
+  server: 179.255.127.45
+  port: 443
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: vms.lifetime51.workers.dev
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-68
-  type: vless
-  server: 205.185.126.59
+  type: trojan
+  server: 193.134.209.165
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-69
-  type: vless
-  server: 158.178.230.113
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-69
+  type: trojan
+  server: 179.255.157.247
   port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
 - name: US美国(mibei77.com 米贝节点分享)-70
-  type: vless
-  server: 203.88.117.190
+  type: trojan
+  server: 31.76.0.15
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffp%3Dchrome'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-72
-  type: vless
-  server: 159.223.78.76
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-73
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
       Host: ''
-  tls: true
-  servername: wallweb-4r0.pages.dev
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-74
-  type: vless
-  server: 162.35.169.69
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffp%3Dchrome'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-77
-  type: vless
-  server: skelmoridianservice.com
-  port: 443
-  uuid: af381781-3a00-4565-b1bc-4df0275eb4b9
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-  tls: true
-  servername: www.velunatrixes.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: 'a1b2c3d4e5f6a7b8'
-- name: US美国(mibei77.com 米贝节点分享)-78
-  type: vless
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: vms.lifetime02.workers.dev
-- name: US美国(mibei77.com 米贝节点分享)-79
-  type: vless
-  server: 172.64.150.43
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: US美国(mibei77.com 米贝节点分享)-80
-  type: vless
-  server: 104.19.212.207
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-81
-  type: vless
-  server: 103.143.81.178
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-82
-  type: vless
-  server: 104.18.236.11
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-83
-  type: vless
-  server: 104.17.139.37
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-84
-  type: vless
-  server: 104.24.95.193
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-88
-  type: vless
-  server: 104.17.134.88
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-89
-  type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: vms.lifetime19.workers.dev
-- name: US美国(mibei77.com 米贝节点分享)-92
-  type: vless
-  server: 141.98.41.80
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-93
-  type: vless
-  server: 155.46.167.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: vms.lifetime50.workers.dev
-- name: HK香港(mibei77.com 米贝节点分享)-94
-  type: vless
-  server: 172.64.79.1
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-95
-  type: vless
-  server: 172.67.118.45
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffdip'
-    headers:
-      Host: ''
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-96
-  type: vless
-  server: 172.64.153.61
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffdipfp%3Dunsafe'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: US美国(mibei77.com 米贝节点分享)-97
-  type: vless
-  server: 77.239.104.82
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2FTelegram%40VPNine1'
-    headers:
-      Host: ''
-  tls: true
-  servername: vp58.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-98
-  type: vless
-  server: 179.255.146.162
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-102
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 55688
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  udp: true
-  network: tcp
-  tls: true
-  servername: bilibili-vn.biliimg.com
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
-    short-id: 'a46bb5972cf50671'
-- name: US美国(mibei77.com 米贝节点分享)-106
-  type: vless
-  server: 162.159.135.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffp%3Dchrome'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: US美国(mibei77.com 米贝节点分享)-108
-  type: vless
-  server: 57.128.177.198
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: ''
-  tls: true
-  servername: vp58.cc.cd
-- name: HK香港(mibei77.com 米贝节点分享)-109
-  type: vless
-  server: 38.22.88.248
-  port: 27509
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.suffolk.edu
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: '6ba85179e30d4fc2'
-- name: US美国(mibei77.com 米贝节点分享)-110
-  type: vless
-  server: 162.159.130.234
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: US美国(mibei77.com 米贝节点分享)-111
-  type: vless
-  server: 172.67.155.65
-  port: 8443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Fcart%2Fdocs%2Fwww%2Fproxyip'
-    headers:
-      Host: lucasjow.us.ci
-  tls: true
-  servername: lucasjow.us.ci
-- name: US美国(mibei77.com 米贝节点分享)-113
-  type: vless
-  server: 104.18.89.52
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-114
-  type: vless
-  server: 188.255.157.188
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-115
-  type: vless
+- name: US美国(mibei77.com 米贝节点分享)-71
+  type: trojan
   server: 162.159.128.253
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-116
-  type: vless
-  server: 162.159.140.116
-  port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-117
-  type: vless
-  server: 216.24.57.1
-  port: 443
-  uuid: 974c2588-c1cd-43ac-8823-ce3d879b09fd
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2Fid-amz'
+    path: '%2Fassignment'
     headers:
       Host: ''
-  tls: true
-  servername: somersby.pt.ex33r.eu.cc
-- name: US美国(mibei77.com 米贝节点分享)-118
-  type: vless
-  server: 179.255.140.73
+- name: US美国(mibei77.com 米贝节点分享)-72
+  type: trojan
+  server: 172.66.0.118
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-119
-  type: vless
-  server: 179.255.127.209
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-73
+  type: trojan
+  server: 162.159.149.157
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-121
-  type: vless
-  server: 104.152.48.248
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-74
+  type: trojan
+  server: 68.64.180.218
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffp%3Dchrome'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-122
-  type: vless
-  server: 23.227.39.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: vms.lifetime17.workers.dev
-- name: US美国(mibei77.com 米贝节点分享)-123
-  type: vless
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: vms.lifetime42.workers.dev
-- name: US美国(mibei77.com 米贝节点分享)-124
-  type: vless
-  server: 154.17.11.190
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-75
+  type: trojan
+  server: 199.119.137.32
   port: 8443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-125
-  type: vless
-  server: 188.255.157.177
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-76
+  type: trojan
+  server: 78.40.209.33
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-127
-  type: vless
-  server: 38.207.179.77
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-77
+  type: trojan
+  server: 194.55.164.118
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-130
+      Host: ''
+- name: US美国(mibei77.com 米贝节点分享)-78
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 186.246.9.29
+  port: 443
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
   udp: true
   network: tcp
   tls: true
-  servername: www.lamer.com.sg
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
+  servername: wordpress.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: '28f5c1f8f98a'
-- name: SG新加坡(mibei77.com 米贝节点分享)-135
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+    short-id: '50ad5564'
+- name: SG新加坡(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 172.66.47.18
+  port: 443
+  password: e7TTceggMwUMg%2BaFN%3AF4
+  udp: true
+  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+  servername: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+  network: ws
+  ws-opts:
+    path: '%2Ftr%2FSIeRkg2QvR2Zcpu0SeEMow%3Fed%3D2560'
+    headers:
+      Host: ''
+- name: JP日本(mibei77.com 米贝节点分享)
   type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  server: 203.137.165.164
+  port: 57554
+  uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
   udp: true
   network: ws
   ws-opts:
     path: '%2F%40Marisa_kristi'
     headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-136
-  type: vless
-  server: 60.130.209.253
+- name: HK香港(mibei77.com 米贝节点分享)
+  type: trojan
+  server: 162.159.61.183
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffp%3Dchrome'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-- name: JP日本(mibei77.com 米贝节点分享)-137
-  type: vless
-  server: 52.197.219.243
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-85
+  type: trojan
+  server: 104.18.41.167
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-138
-  type: vless
-  server: 45.8.173.20
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-86
+  type: trojan
+  server: 172.64.154.219
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-139
-  type: vless
-  server: 172.104.81.253
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-87
+  type: trojan
+  server: 172.64.151.20
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-141
-  type: vless
-  server: 104.18.42.153
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-88
+  type: trojan
+  server: 104.18.35.31
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-142
-  type: vless
-  server: 172.64.159.33
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-89
+  type: trojan
+  server: 104.18.47.138
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2F'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-143
-  type: vless
-  server: 104.17.167.134
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-90
+  type: trojan
+  server: 172.64.155.36
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffdip%3Dsstp%3A%2F%2Fvpn%3Avpn%40public-vpn-200.opengw.net%3A443%3Fed%3D2560fp%3Dchromefp%3Dchrome'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-144
-  type: vless
-  server: 83.229.120.10
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-91
+  type: trojan
+  server: 172.64.151.23
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  password: humanity
   udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
   network: ws
   ws-opts:
-    path: '%2Ffp%3Dchrome'
+    path: '%2Fassignment'
     headers:
-      Host: snip.edgeoneai.cc.cd
-  tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-92
+  type: trojan
+  server: 104.18.39.55
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-93
+  type: trojan
+  server: 104.18.33.121
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-94
+  type: trojan
+  server: 172.64.149.78
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-95
+  type: trojan
+  server: 104.18.46.59
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-96
+  type: trojan
+  server: 172.64.153.224
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-97
+  type: trojan
+  server: 103.219.195.65
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-98
+  type: trojan
+  server: 47.57.181.17
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-99
+  type: trojan
+  server: 103.69.128.221
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: HK香港(mibei77.com 米贝节点分享)-100
+  type: trojan
+  server: 45.196.235.64
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: SG新加坡(mibei77.com 米贝节点分享)-107
+  type: trojan
+  server: 128.199.128.117
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: SG新加坡(mibei77.com 米贝节点分享)-108
+  type: trojan
+  server: 165.22.102.89
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: SG新加坡(mibei77.com 米贝节点分享)-109
+  type: trojan
+  server: 168.144.41.69
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: SG新加坡(mibei77.com 米贝节点分享)-110
+  type: trojan
+  server: 178.93.160.132
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: SG新加坡(mibei77.com 米贝节点分享)-111
+  type: trojan
+  server: 157.245.159.88
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: JP日本(mibei77.com 米贝节点分享)-129
+  type: trojan
+  server: 35.78.243.103
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
+- name: JP日本(mibei77.com 米贝节点分享)-130
+  type: trojan
+  server: 212.192.221.107
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.cordweave.com
+  servername: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: '%2Fassignment'
+    headers:
+      Host: ''
 - name: 🇺🇸
   type: vless
   server: a0688bt.us4.h1clayd.click
@@ -1182,7 +1393,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-166
+- name: US美国-169
   type: vless
   server: 104.16.105.166
   port: 443
@@ -1195,7 +1406,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-169
+- name: US美国-172
   type: trojan
   server: 45.80.111.7
   port: 443
@@ -1209,7 +1420,7 @@ proxies:
     headers:
       Host: ''
   skip-cert-verify: true
-- name: US美国-172
+- name: US美国-175
   type: vless
   server: 195.123.213.28
   port: 443
@@ -1223,6 +1434,13 @@ proxies:
   reality-opts:
     public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
     short-id: '5c256336e3b673fa'
+- name: 美国(shop.tgaaaa.co
+  type: vless
+  server: 144.31.213.229
+  port: 443
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  udp: true
+  network: tcp
 - name: 🇯🇵JP_35
   type: hysteria2
   server: freedom.chenlan.top
@@ -1260,7 +1478,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 🇺🇸-186
+- name: 🇺🇸-191
   type: vless
   server: 185.193.29.123
   port: 443
@@ -1308,7 +1526,7 @@ proxies:
   tls: true
   servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
   client-fingerprint: chrome
-- name: 美国(shop.tgaaaa.co
+- name: 美国(shop.tgaaaa.co-200
   type: vless
   server: req.apptrendv.com
   port: 2083
@@ -1343,6 +1561,17 @@ proxies:
   udp: true
   sni: us.mi11o4ka.com
   servername: us.mi11o4ka.com
+- name: US美国-210
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: vms.lifetime42.workers.dev
 - name: 🇺🇸US_127
   type: vless
   server: 169.40.42.224
@@ -1365,7 +1594,7 @@ proxies:
   udp: true
   sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
   servername: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-- name: US美国-216
+- name: US美国-220
   type: vless
   server: 104.19.34.37
   port: 443
@@ -1400,7 +1629,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-225
+- name: US美国-228
   type: vless
   server: 104.16.155.122
   port: 443
@@ -1447,7 +1676,7 @@ proxies:
   servername: u695098u764943ccs478.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: US美国-240
+- name: US美国-243
   type: vless
   server: 132.226.151.12
   port: 8443
@@ -1460,7 +1689,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇺🇸-245
+- name: 🇺🇸-248
   type: vless
   server: 167.82.101.251
   port: 443
@@ -1498,7 +1727,7 @@ proxies:
     path: '%2Fws'
     headers:
       Host: support.zoom.us.v2ray.simspeedup.com
-- name: US美国-251
+- name: US美国-254
   type: vless
   server: 190.93.244.166
   port: 2096
@@ -1525,6 +1754,19 @@ proxies:
     path: '%2Fh64l'
     headers:
       Host: au1.yang-1989.xyz
+- name: SG新加坡
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 24916ad0-847d-4522-9e17-f4347dee57fd
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: kv.074167.xyz
+  tls: true
+  servername: kv.074167.xyz
 - name: 🇺🇸US_427
   type: vless
   server: 128.241.25.215
@@ -1553,7 +1795,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: 'c39cc7310a'
-- name: US美国-261
+- name: US美国-265
   type: vless
   server: 5.253.28.240
   port: 40443
@@ -1614,7 +1856,7 @@ proxies:
   reality-opts:
     public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
     short-id: '0990d22f'
-- name: JP日本-268
+- name: JP日本-272
   type: vless
   server: 45.153.124.120
   port: 443
@@ -1666,20 +1908,18 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 美国(shop.tgaaaa.co-294
+- name: 美国(shop.tgaaaa.co-297
   type: vless
-  server: 8.35.211.73
-  port: 2087
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   network: ws
   ws-opts:
-    path: /resource
+    path: /
     headers:
-      Host: d39333476.pages.dev
-  tls: true
-  servername: d39333476.pages.dev
-- name: JP日本-296
+      Host: vms.lifetime02.workers.dev
+- name: JP日本-301
   type: vless
   server: 140.235.37.72
   port: 443
@@ -1692,7 +1932,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇺🇸-304
+- name: 🇺🇸-309
   type: vless
   server: www.true.th
   port: 443
@@ -1706,7 +1946,7 @@ proxies:
   tls: true
   servername: d1yxsk0zprgivr.cloudfront.net
   client-fingerprint: chrome
-- name: 🇺🇸-305
+- name: 🇺🇸-310
   type: vless
   server: 104.24.9.6
   port: 443
@@ -1720,7 +1960,7 @@ proxies:
   tls: true
   servername: ld.223350.xyz
   client-fingerprint: chrome
-- name: 🇺🇸-309
+- name: 🇺🇸-314
   type: vless
   server: support.zoom.us
   port: 443
@@ -1734,19 +1974,6 @@ proxies:
   tls: true
   servername: support.zoom.us.yxls.eu.cc
   client-fingerprint: chrome
-- name: US美国-312
-  type: trojan
-  server: 104.19.46.152
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.cordweave.com
-  servername: www.cordweave.com
-  network: ws
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: ''
 - name: 🇯🇵JP_25
   type: vless
   server: 103.75.118.228
@@ -1775,7 +2002,7 @@ proxies:
   tls: true
   servername: ccc.010304.xyz
   client-fingerprint: chrome
-- name: 美国(shop.tgaaaa.co-319
+- name: 美国(shop.tgaaaa.co-323
   type: vless
   server: eeeeee.k1-0.kdns.fr
   port: 443
@@ -1788,7 +2015,7 @@ proxies:
       Host: EeeEEe.K1-0.KDnS.fr
   tls: true
   servername: EeeEEe.K1-0.KDnS.fr
-- name: 🇭🇰-331
+- name: 🇭🇰-335
   type: vless
   server: 91.193.58.209
   port: 80
@@ -1813,7 +2040,7 @@ proxies:
   tls: true
   servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   client-fingerprint: chrome
-- name: 🇺🇸-340
+- name: 🇺🇸-344
   type: vless
   server: 45.131.208.4
   port: 80
@@ -1847,7 +2074,7 @@ proxies:
   sni: rb.mangshe.xyz
   servername: rb.mangshe.xyz
   skip-cert-verify: true
-- name: 🇭🇰-345
+- name: 🇭🇰-349
   type: vless
   server: 47.82.120.47
   port: 43630
@@ -1917,7 +2144,7 @@ proxies:
   servername: u695098u54d73951s298.kukuss.top
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: US美国-365
+- name: US美国-369
   type: trojan
   server: russia.com
   port: 443
@@ -1952,21 +2179,7 @@ proxies:
   udp: true
   sni: resources.findconnectwithemployersandbuildprofessionalnetwork.com
   servername: resources.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: US美国-370
-  type: vless
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  udp: true
-  network: tcp
-  tls: true
-  servername: sg2-8sb.6121999.dpdns.org
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: '6ba85179e30d4fc2'
-- name: 美国(shop.tgaaaa.co-371
+- name: 美国(shop.tgaaaa.co-374
   type: vless
   server: 5.253.28.240
   port: 2443
@@ -1977,7 +2190,7 @@ proxies:
     grpc-service-name: rex-eb0bf76b710ce763
   tls: true
   servername: ''
-- name: US美国-372
+- name: US美国-375
   type: vless
   server: 104.18.37.110
   port: 443
@@ -2004,7 +2217,7 @@ proxies:
   tls: true
   servername: 6-m17.KUWaiT.kdNs.fR
   client-fingerprint: chrome
-- name: 🇭🇰-378
+- name: 🇭🇰-381
   type: vless
   server: 91.193.58.246
   port: 80
@@ -2015,14 +2228,14 @@ proxies:
     path: /pyip=Telegram-WangCai2🇨🇳
     headers:
       Host: twilight-poetry-2bfe.218-699.workers.dev
-- name: US美国-381
+- name: US美国-384
   type: ss
   server: 64.83.20.73
   port: 8388
   cipher: aes-256-gcm
   password: BookCloud2026
   udp: true
-- name: US美国-386
+- name: US美国-389
   type: vless
   server: 104.18.189.153
   port: 443
@@ -2044,7 +2257,7 @@ proxies:
   sni: bing.com
   servername: bing.com
   skip-cert-verify: true
-- name: US美国-395
+- name: US美国-398
   type: vless
   server: 104.16.158.34
   port: 443
@@ -2057,7 +2270,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-398
+- name: US美国-401
   type: vless
   server: 104.16.160.1
   port: 443
@@ -2127,7 +2340,21 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: NzJlOTQ5NWYtM2ZkYi00Cg%3D%3D
   udp: true
-- name: US美国-428
+- name: SG新加坡-427
+  type: vless
+  server: 175.41.179.37
+  port: 51262
+  uuid: 6c6ea474-0cf5-4a3d-bc81-aa2eeb6516d6
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F%40Marisa_kristi'
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  client-fingerprint: chrome
+- name: US美国-430
   type: vless
   server: 104.18.41.245
   port: 443
@@ -2147,7 +2374,7 @@ proxies:
   cipher: aes-256-gcm
   password: NjI4NzJhZjZkMDlkZTg4ODNkOWJkYWI5ZWUwMWFi
   udp: true
-- name: US美国-435
+- name: US美国-437
   type: vless
   server: 193.108.112.65
   port: 443
@@ -2160,7 +2387,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: JP日本-438
+- name: JP日本-440
   type: vless
   server: 35.78.243.103
   port: 443
@@ -2173,7 +2400,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-441
+- name: US美国-443
   type: vless
   server: hydra.yokkastars.com
   port: 40443
@@ -2201,7 +2428,7 @@ proxies:
   tls: true
   servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
   client-fingerprint: chrome
-- name: US美国-449
+- name: US美国-451
   type: vless
   server: 104.18.255.167
   port: 443
@@ -2225,7 +2452,7 @@ proxies:
   servername: u695098u07fcba7ds79.kukuss.top
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇭🇰-455
+- name: 🇭🇰-457
   type: vless
   server: 91.193.58.93
   port: 443
@@ -2238,7 +2465,15 @@ proxies:
       Host: jamph131-1228.pages.dev
   tls: true
   servername: jamph131-1228.pages.dev
-- name: US美国-459
+- name: 🇺🇸US_492
+  type: trojan
+  server: 66.163.112.171
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: learn.unlockyourfuturefindyourperfectcareer.com
+  servername: learn.unlockyourfuturefindyourperfectcareer.com
+- name: US美国-462
   type: vless
   server: 104.17.217.206
   port: 443
@@ -2277,14 +2512,25 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   client-fingerprint: chrome
-- name: 美国(shop.tgaaaa.co-479
+- name: 美国(shop.tgaaaa.co-482
   type: vless
   server: 79.182.39.232
   port: 25895
   uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   network: tcp
-- name: 🇺🇸-482
+- name: US美国-483
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: 🇺🇸-485
   type: vless
   server: www.speedtest.net
   port: 443
@@ -2325,7 +2571,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: 🇺🇸-501
+- name: 🇺🇸-504
   type: vless
   server: 162.159.10.87
   port: 443
@@ -2389,7 +2635,7 @@ proxies:
   sni: www.microsoft.com
   servername: www.microsoft.com
   skip-cert-verify: true
-- name: US美国-525
+- name: US美国-530
   type: vless
   server: 156.229.163.237
   port: 10238
@@ -2428,7 +2674,7 @@ proxies:
   servername: u695098u07fcba7ds79.kukuss.top
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇺🇸-537
+- name: 🇺🇸-542
   type: vless
   server: tk1.high-speed-test-56424.me
   port: 443
@@ -2456,7 +2702,7 @@ proxies:
   tls: true
   servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   client-fingerprint: chrome
-- name: US美国-547
+- name: US美国-552
   type: vless
   server: 179.255.127.32
   port: 443
@@ -2491,7 +2737,7 @@ proxies:
   servername: u695098u99a93686s848.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇭🇰-554
+- name: 🇭🇰-560
   type: vless
   server: 122.10.117.1
   port: 11674
@@ -2517,7 +2763,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-- name: 🇸🇬-559
+- name: 🇸🇬-565
   type: vless
   server: 45.40.149.50
   port: 8880
@@ -2528,7 +2774,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime39.workers.dev
-- name: JP日本-560
+- name: JP日本-566
   type: vless
   server: 152.69.200.164
   port: 443
@@ -2541,7 +2787,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇭🇰-565
+- name: 🇭🇰-571
   type: vless
   server: 91.193.58.92
   port: 80
@@ -2559,7 +2805,7 @@ proxies:
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
   udp: true
-- name: 🇺🇸-571
+- name: 🇺🇸-577
   type: vless
   server: 108.162.194.135
   port: 443
@@ -2619,7 +2865,7 @@ proxies:
   reality-opts:
     public-key: kvLUYW6fwHXutu8Z4On6mi61kjslCyCc8ErFffUM1D0
     short-id: 'dedce016e3671418'
-- name: 🇭🇰-589
+- name: 🇭🇰-595
   type: vless
   server: 91.193.58.179
   port: 80
@@ -2630,14 +2876,6 @@ proxies:
     path: /pyip=Telegram-WangCai2🇨🇳
     headers:
       Host: twilight-poetry-2bfe.218-699.workers.dev
-- name: 美国(shop.tgaaaa.co-595
-  type: trojan
-  server: 172.66.47.18
-  port: 443
-  password: e7TTceggMwUMg+aFN:F4
-  udp: true
-  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
-  servername: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
 - name: US VLESS-78
   type: vless
   server: 192.227.169.125
@@ -2657,7 +2895,7 @@ proxies:
   udp: true
   sni: nas.aizhzo.com
   servername: nas.aizhzo.com
-- name: 🇭🇰-605
+- name: 🇭🇰-610
   type: vless
   server: 114.29.238.251
   port: 13443
@@ -2708,7 +2946,7 @@ proxies:
   tls: true
   servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
   client-fingerprint: chrome
-- name: 美国(shop.tgaaaa.co-617
+- name: 美国(shop.tgaaaa.co-622
   type: vless
   server: eeee.k1-0.kdns.fr
   port: 443
@@ -2749,13 +2987,21 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 🇺🇸-625
+- name: 🇺🇸-630
   type: ss
   server: tinkered-pennies-puppies.freesocks.work
   port: 443
   cipher: chacha20-ietf-poly1305
   password: hbGrpfvNrJsUmKmPbR3iY2
   udp: true
+- name: 🇺🇸US_538
+  type: trojan
+  server: 66.163.122.25
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
+  servername: cdn.searchnationwidecareerchangehelperandguidancetoday.com
 - name: 🇺🇸US_445
   type: trojan
   server: 216.106.186.33
@@ -2778,7 +3024,7 @@ proxies:
   reality-opts:
     public-key: UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ
     short-id: '133a3f10a1581047'
-- name: 美国(shop.tgaaaa.co-636
+- name: 美国(shop.tgaaaa.co-644
   type: trojan
   server: 172.64.152.23
   port: 443
@@ -2786,7 +3032,7 @@ proxies:
   udp: true
   sni: www.calmlunch.com
   servername: www.calmlunch.com
-- name: US美国-637
+- name: US美国-645
   type: vless
   server: eeeee.k1-0.kdns.fr
   port: 443
@@ -2796,7 +3042,7 @@ proxies:
   tls: true
   servername: EeEEE.k1-0.KDns.Fr
   client-fingerprint: chrome
-- name: 🇺🇸-638
+- name: 🇺🇸-646
   type: vless
   server: 199.232.78.159
   port: 443
@@ -2869,7 +3115,7 @@ proxies:
   reality-opts:
     public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
     short-id: '125ba3'
-- name: 🇭🇰-660
+- name: 🇭🇰-669
   type: vless
   server: 152.175.6.229
   port: 31884
@@ -2902,7 +3148,7 @@ proxies:
   sni: 66.23.203.21
   servername: 66.23.203.21
   skip-cert-verify: true
-- name: 美国(shop.tgaaaa.co-665
+- name: 美国(shop.tgaaaa.co-674
   type: trojan
   server: 190.93.245.148
   port: 443
@@ -2924,7 +3170,7 @@ proxies:
   tls: true
   servername: ccc.010304.xyz
   client-fingerprint: chrome
-- name: CA加拿大-672
+- name: CA加拿大-681
   type: trojan
   server: www.visa.com.sg
   port: 2096
@@ -2958,14 +3204,14 @@ proxies:
   uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
   udp: true
   network: tcp
-- name: 美国(shop.tgaaaa.co-677
+- name: 美国(shop.tgaaaa.co-686
   type: vless
   server: dorado.yokkastars.com
   port: 40443
   uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   udp: true
   network: tcp
-- name: 🇸🇬-679
+- name: 🇸🇬-688
   type: vless
   server: 154.196.139.50
   port: 443
@@ -2979,7 +3225,7 @@ proxies:
   reality-opts:
     public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
     short-id: 'e53048e82bb20077'
-- name: SG新加坡
+- name: SG新加坡-689
   type: vless
   server: 140.245.54.185
   port: 443
@@ -3048,7 +3294,7 @@ proxies:
     path: '%2Fvless'
     headers:
       Host: 45.138.100.248
-- name: 🇭🇰-699
+- name: 🇭🇰-709
   type: vless
   server: 91.193.58.117
   port: 443
@@ -3075,7 +3321,7 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: '48050fab'
-- name: 🇭🇰-709
+- name: 🇭🇰-721
   type: vless
   server: 34.96.188.243
   port: 443
@@ -3118,7 +3364,7 @@ proxies:
   udp: true
   sni: www.nextjobopportunityandclaimyouridealrole.com
   servername: www.nextjobopportunityandclaimyouridealrole.com
-- name: 🇯🇵-728
+- name: 🇯🇵-740
   type: vless
   server: 38.47.96.220
   port: 11424
@@ -3142,7 +3388,7 @@ proxies:
   servername: u695098u8fad5a44s552.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇸🇬-732
+- name: 🇸🇬-744
   type: vless
   server: 47.131.189.221
   port: 443
@@ -3156,7 +3402,7 @@ proxies:
   tls: true
   servername: mia7.pages.dev
   client-fingerprint: chrome
-- name: 🇭🇰-738
+- name: 🇭🇰-750
   type: vless
   server: 91.193.58.93
   port: 80
@@ -3167,7 +3413,7 @@ proxies:
     path: /pyip=Telegram🇨🇳+@WangCai2
     headers:
       Host: plain-darkness-90ea.259.workers.dev
-- name: 🇺🇸-740
+- name: 🇺🇸-752
   type: vless
   server: www.cnae.top
   port: 443
@@ -3180,7 +3426,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   tls: true
   servername: t1s1.rittbo.kdns.fr
-- name: 🇯🇵-741
+- name: 🇯🇵-753
   type: vless
   server: 155.248.168.35
   port: 18122
@@ -3234,7 +3480,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 🇺🇸-766
+- name: 🇺🇸-776
   type: vless
   server: 45.155.52.231
   port: 443
@@ -3284,7 +3530,7 @@ proxies:
   tls: true
   servername: sg2-xr.zgrelay.com
   client-fingerprint: chrome
-- name: US美国-770
+- name: US美国-780
   type: vless
   server: 104.21.219.160
   port: 443
@@ -3298,7 +3544,7 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   client-fingerprint: unsafe
-- name: 🇯🇵-774
+- name: 🇯🇵-784
   type: vless
   server: 141.11.138.132
   port: 443
@@ -3323,7 +3569,7 @@ proxies:
   servername: u695098u8fad5a44s552.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: US美国-778
+- name: US美国-788
   type: vless
   server: 172.64.190.143
   port: 443
@@ -3345,7 +3591,7 @@ proxies:
   sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
   servername: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3
   skip-cert-verify: true
-- name: US美国-790
+- name: US美国-801
   type: vless
   server: vvv.k1-0.kdns.fr
   port: 443
@@ -3363,7 +3609,7 @@ proxies:
   udp: true
   sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
   servername: api.explorecreativejobsandenhanceyourcareerportfolio.com
-- name: 🇺🇸_US_美国-795
+- name: 🇺🇸_US_美国-807
   type: vless
   server: 66.33.22.221
   port: 15262
@@ -3388,14 +3634,14 @@ proxies:
   reality-opts:
     public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
     short-id: '5a42dbd7e26a0415'
-- name: 🇺🇸-799
+- name: 🇺🇸-811
   type: vless
   server: 141.133.172.222
   port: 20342
   uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
   udp: true
   network: tcp
-- name: 美国(shop.tgaaaa.co-801
+- name: 美国(shop.tgaaaa.co-813
   type: trojan
   server: 104.16.7.70
   port: 443
@@ -3403,21 +3649,7 @@ proxies:
   udp: true
   sni: www.calmlunch.com
   servername: www.calmlunch.com
-- name: JP日本-809
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
-  udp: true
-  network: ws
-  ws-opts:
-    path: '%2F%40Marisa_kristi'
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  client-fingerprint: chrome
-- name: 🇺🇸-810
+- name: 🇺🇸-822
   type: vless
   server: 45.151.30.127
   port: 9873
@@ -3431,7 +3663,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-- name: 🇺🇸-814
+- name: 🇺🇸-826
   type: vless
   server: 18.239.134.69
   port: 80
@@ -3459,21 +3691,7 @@ proxies:
   sni: www.apple.com
   servername: www.apple.com
   skip-cert-verify: true
-- name: US美国-819
-  type: vless
-  server: s12.bsh-net.ru
-  port: 443
-  uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
-  udp: true
-  network: tcp
-  tls: true
-  servername: s12.bsh-net.ru
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
-    short-id: '51079f144d661484'
-- name: 🇭🇰-821
+- name: 🇭🇰-832
   type: vless
   server: 152.175.8.61
   port: 36155
@@ -3524,7 +3742,21 @@ proxies:
     path: '%2F'
     headers:
       Host: 23g-lively-resonance-96b9hsf.msc633k2.workers.dev
-- name: US美国-843
+- name: 🇸🇬SG_62
+  type: vless
+  server: 134.185.81.5
+  port: 47881
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.tesla.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: '38d72071'
+- name: US美国-855
   type: vless
   server: 45.32.94.246
   port: 443
@@ -3537,7 +3769,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: JP日本-848
+- name: JP日本-860
   type: vless
   server: 52.194.44.56
   port: 443
@@ -3572,7 +3804,7 @@ proxies:
   cipher: aes-256-gcm
   password: pKEW8JPByTVTLtM
   udp: true
-- name: US美国-854
+- name: US美国-866
   type: vless
   server: 172.67.94.180
   port: 443
@@ -3585,7 +3817,18 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇯🇵-864
+- name: 🇺🇸US_365
+  type: vless
+  server: 208.84.100.209
+  port: 8080
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: ''
+- name: 🇯🇵-876
   type: vless
   server: 154.197.88.253
   port: 443
@@ -3598,7 +3841,7 @@ proxies:
       Host: notls.lukongtou.eu.org
   tls: true
   servername: notls.lukongtou.eu.org
-- name: US美国-868
+- name: US美国-881
   type: vless
   server: 172.64.159.254
   port: 443
@@ -3641,7 +3884,7 @@ proxies:
   reality-opts:
     public-key: yFvOpugh65xKQNAwKrhitv4d2pflD8QwNFMj-jDOmT8
     short-id: '0123456789abcdef'
-- name: US美国-881
+- name: US美国-894
   type: trojan
   server: 162.159.36.20
   port: 443
@@ -3655,7 +3898,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
   skip-cert-verify: true
-- name: SG新加坡-889
+- name: SG新加坡-901
   type: vless
   server: 146.190.100.44
   port: 443
@@ -3668,7 +3911,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇺🇸-894
+- name: 🇺🇸-906
   type: vless
   server: 104.254.140.30
   port: 8880
@@ -3712,7 +3955,7 @@ proxies:
   udp: true
   sni: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
   servername: cdn.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: US美国-900
+- name: US美国-912
   type: trojan
   server: www.speedtest.net
   port: 443
@@ -3726,7 +3969,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
   skip-cert-verify: true
-- name: US美国-902
+- name: US美国-914
   type: vless
   server: 104.18.81.19
   port: 443
@@ -3739,7 +3982,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇸🇬-905
+- name: 🇸🇬-918
   type: vless
   server: 104.17.191.15
   port: 8880
@@ -3750,7 +3993,7 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: fancy-haze-ab00.236-68b.workers.dev
-- name: 美国(shop.tgaaaa.co-906
+- name: 美国(shop.tgaaaa.co-919
   type: vless
   server: 172.66.44.211
   port: 2083
@@ -3763,7 +4006,7 @@ proxies:
       Host: wk1.f1w.de5.net
   tls: true
   servername: wk1.f1w.de5.net
-- name: HK香港-907
+- name: HK香港-920
   type: vless
   server: 103.247.28.103
   port: 443
@@ -3798,7 +4041,7 @@ proxies:
   tls: true
   servername: ssl.fastly.com
   client-fingerprint: firefox
-- name: 🇯🇵-911
+- name: 🇯🇵-924
   type: vless
   server: 82.40.42.204
   port: 8443
@@ -3834,7 +4077,7 @@ proxies:
   udp: true
   sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
   servername: blog.explorecreativejobsandenhanceyourcareerportfolio.com
-- name: US美国-917
+- name: US美国-930
   type: vless
   server: 179.255.115.22
   port: 443
@@ -3861,6 +4104,19 @@ proxies:
   tls: true
   servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
   client-fingerprint: chrome
+- name: US美国-939
+  type: vless
+  server: 162.159.140.116
+  port: 443
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2Fws'
+    headers:
+      Host: ''
+  tls: true
+  servername: indigostar.click
 - name: 🇺🇸US_501
   type: vless
   server: 46.16.34.234
@@ -3871,7 +4127,7 @@ proxies:
   tls: true
   servername: 1e626999.con.metricdraft.tech
   client-fingerprint: chrome
-- name: JP日本-932
+- name: JP日本-945
   type: vless
   server: 172.66.0.172
   port: 443
@@ -3899,7 +4155,16 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: '48050fab'
-- name: 🇯🇵-938
+- name: 🇺🇸US_569
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: 66.163.112.242
+  servername: 66.163.112.242
+  skip-cert-verify: true
+- name: 🇯🇵-952
   type: vless
   server: 45.192.200.66
   port: 8443
@@ -3913,7 +4178,7 @@ proxies:
   tls: true
   servername: rubifen.adaspoloandco.com
   client-fingerprint: chrome
-- name: 🇸🇬-942
+- name: 🇸🇬-956
   type: vless
   server: 172.65.90.53
   port: 8880
@@ -3924,6 +4189,19 @@ proxies:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: orange-lab-896e.365-80b.workers.dev
+- name: JP日本-958
+  type: vless
+  server: 193.36.95.34
+  port: 443
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2Fws'
+    headers:
+      Host: ''
+  tls: true
+  servername: indigostar.click
 - name: 🇯🇵JP_41
   type: vless
   server: 107.191.53.86
@@ -3952,7 +4230,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: US美国-955
+- name: US美国-969
   type: vless
   server: 104.17.128.176
   port: 443
@@ -3965,7 +4243,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇺🇸-956
+- name: 🇺🇸-970
   type: vless
   server: 151.247.22.58
   port: 443
@@ -3979,7 +4257,7 @@ proxies:
   reality-opts:
     public-key: I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY
     short-id: 'b1c5a5e2'
-- name: 🇺🇸-958
+- name: 🇺🇸-972
   type: vless
   server: usa.letsconnectpoint.com
   port: 443
@@ -4004,6 +4282,19 @@ proxies:
   servername: u695098u5cabc3b2s489.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
+- name: US美国-979
+  type: vless
+  server: 31.77.13.22
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  udp: true
+  network: tcp
+  tls: true
+  servername: rusbid.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
 - name: 🇺🇸US_59
   type: hysteria2
   server: 129.213.91.185
@@ -4013,7 +4304,7 @@ proxies:
   sni: 129.213.91.185
   servername: 129.213.91.185
   skip-cert-verify: true
-- name: 🇭🇰-969
+- name: 🇭🇰-984
   type: vless
   server: 104.171.136.112
   port: 2200
@@ -4024,7 +4315,7 @@ proxies:
     path: /v1
     headers:
       Host: ''
-- name: 🇯🇵-971
+- name: 🇯🇵-986
   type: vless
   server: 136.110.116.68
   port: 443
@@ -4037,7 +4328,7 @@ proxies:
   reality-opts:
     public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
     short-id: '8380ad05cd21a69f'
-- name: 🇺🇸-973
+- name: 🇺🇸-988
   type: vless
   server: 172.67.139.229
   port: 443
@@ -4087,7 +4378,7 @@ proxies:
   reality-opts:
     public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
     short-id: 'fb2c6678'
-- name: US美国-984
+- name: US美国-998
   type: vless
   server: 31.77.135.76
   port: 8443
@@ -4138,19 +4429,6 @@ proxies:
     headers:
       Host: ''
   skip-cert-verify: true
-- name: US美国-990
-  type: trojan
-  server: 104.18.72.213
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.cordweave.com
-  servername: www.cordweave.com
-  network: ws
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: ''
 - name: 🇯🇵JP_29
   type: vless
   server: 104.17.50.227
@@ -4179,7 +4457,7 @@ proxies:
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: '48050fab'
-- name: US美国-998
+- name: US美国-1011
   type: vless
   server: 5.253.28.224
   port: 40443
@@ -4193,7 +4471,7 @@ proxies:
   reality-opts:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: '68a8'
-- name: US美国-999
+- name: US美国-1012
   type: vless
   server: 207.57.132.189
   port: 8443
@@ -4206,7 +4484,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇺🇸_US_美国-1001
+- name: 🇺🇸_US_美国-1014
   type: vless
   server: 172.67.130.159
   port: 2096
@@ -4229,7 +4507,7 @@ proxies:
   sni: findconnectwithemployersandbuildprofessionalnetwork.com
   servername: findconnectwithemployersandbuildprofessionalnetwork.com
   skip-cert-verify: true
-- name: 🇺🇸-1009
+- name: 🇺🇸-1022
   type: vless
   server: 94.124.119.187
   port: 16565
@@ -4273,6 +4551,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 456c497e-02bc-4b46-883f-06747cabdfbd
   udp: true
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+  type: vless
+  server: 103.143.81.178
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: shuma.ccwu.cc
+  tls: true
+  servername: shuma.ccwu.cc
+  client-fingerprint: chrome
 - name: 🇯🇵JP_19
   type: hysteria2
   server: 8.211.175.236
@@ -4282,9 +4574,22 @@ proxies:
   sni: 8.211.175.236
   servername: 8.211.175.236
   skip-cert-verify: true
-- name: US美国-1026
+- name: US美国-1039
   type: vless
   server: 172.66.143.219
+  port: 443
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2Fws'
+    headers:
+      Host: ''
+  tls: true
+  servername: indigostar.click
+- name: US美国-1043
+  type: vless
+  server: 104.19.212.207
   port: 443
   uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
   udp: true
@@ -4309,7 +4614,7 @@ proxies:
   reality-opts:
     public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
     short-id: 'feedbacc'
-- name: US美国-1038
+- name: US美国-1051
   type: vless
   server: 172.66.0.118
   port: 443
@@ -4322,7 +4627,20 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-1043
+- name: US美国-1055
+  type: vless
+  server: 103.161.179.36
+  port: 443
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  udp: true
+  network: ws
+  ws-opts:
+    path: '%2Fws'
+    headers:
+      Host: ''
+  tls: true
+  servername: indigostar.click
+- name: US美国-1057
   type: vless
   server: nl-central.v8x2b.lol
   port: 443
@@ -4349,7 +4667,7 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   client-fingerprint: chrome
-- name: 🇺🇸_US_美国-1054
+- name: 🇺🇸_US_美国-1068
   type: vless
   server: 66.33.22.219
   port: 27534
@@ -4360,7 +4678,7 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇯🇵-1060
+- name: 🇯🇵-1074
   type: vless
   server: 2.27.27.64
   port: 443
@@ -4388,7 +4706,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: 'c39cc7310a'
-- name: US美国-1065
+- name: US美国-1079
   type: vless
   server: 104.17.16.124
   port: 443
@@ -4415,7 +4733,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: US美国-1067
+- name: US美国-1081
   type: hysteria2
   server: bl2.nexfile.net
   port: 4444
@@ -4487,7 +4805,7 @@ proxies:
   reality-opts:
     public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
     short-id: '9f1fc5a631ef3126'
-- name: US美国-1096
+- name: US美国-1109
   type: vless
   server: 179.255.127.82
   port: 443
@@ -4521,7 +4839,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: US美国-1121
+- name: US美国-1134
   type: vless
   server: 162.159.137.204
   port: 443
@@ -4548,7 +4866,7 @@ proxies:
   reality-opts:
     public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
     short-id: 'cff998a4'
-- name: 🇸🇬-1126
+- name: 🇸🇬-1139
   type: vless
   server: 103.25.202.102
   port: 443
@@ -4576,7 +4894,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: 🇭🇰-1135
+- name: 🇭🇰-1148
   type: vless
   server: 34.92.16.7
   port: 443
@@ -4598,7 +4916,7 @@ proxies:
   sni: 66.94.121.46
   servername: 66.94.121.46
   skip-cert-verify: true
-- name: 🇺🇸-1137
+- name: 🇺🇸-1150
   type: vless
   server: 200.165.228.51
   port: 2200
@@ -4632,7 +4950,7 @@ proxies:
   sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
   servername: www.findconnectwithemployersandbuildprofessionalnetwork.com
   skip-cert-verify: true
-- name: 🇭🇰-1155
+- name: 🇭🇰-1169
   type: vless
   server: 91.193.58.197
   port: 80
@@ -4688,20 +5006,7 @@ proxies:
   cipher: aes-256-gcm
   password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
   udp: true
-- name: US美国-1186
-  type: trojan
-  server: 104.17.17.238
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.cordweave.com
-  servername: www.cordweave.com
-  network: ws
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: ''
-- name: 🇺🇸_US_美国-1187
+- name: 🇺🇸_US_美国-1201
   type: vless
   server: 72.56.41.33
   port: 40443
@@ -4796,14 +5101,28 @@ proxies:
   servername: u695098uf24555c7s2316.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇺🇸-1215
+- name: 🇺🇸-1228
   type: ss
   server: chengbai02.ascwt179.com
   port: 13223
   cipher: aes-128-gcm
   password: JVrsLLN1tkN8oXZO
   udp: true
-- name: US美国-1218
+- name: 🇭🇰HK_67
+  type: vless
+  server: 38.22.88.248
+  port: 27509
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.suffolk.edu
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+    short-id: '6ba85179e30d4fc2'
+- name: US美国-1232
   type: vless
   server: bestcf.030101.xyz
   port: 443
@@ -4825,7 +5144,7 @@ proxies:
   sni: www.bing.com
   servername: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸-1223
+- name: 🇺🇸-1237
   type: vless
   server: 162.159.156.214
   port: 8880
@@ -4836,7 +5155,7 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: throbbing-moon-a07c.90-ec4.workers.dev
-- name: 🇺🇸-1229
+- name: 🇺🇸-1243
   type: vless
   server: 18.154.132.116
   port: 443
@@ -4864,7 +5183,7 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: 'c39cc7310a'
-- name: 🇯🇵-1242
+- name: 🇯🇵-1256
   type: vless
   server: 104.21.81.50
   port: 443
@@ -4878,7 +5197,7 @@ proxies:
   tls: true
   servername: jp.lovehk.xyz
   client-fingerprint: chrome
-- name: 🇺🇸-1247
+- name: 🇺🇸-1261
   type: vless
   server: 45.144.221.169
   port: 443
@@ -4912,7 +5231,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: US美国-1261
+- name: US美国-1276
   type: hysteria2
   server: 104.165.205.21
   port: 9443
@@ -4920,7 +5239,7 @@ proxies:
   udp: true
   sni: onecloudstream.com
   servername: onecloudstream.com
-- name: JP日本-1262
+- name: JP日本-1277
   type: vless
   server: 193.36.38.135
   port: 443
@@ -4942,6 +5261,16 @@ proxies:
   sni: us007.zestapp778.com
   servername: us007.zestapp778.com
   skip-cert-verify: true
+- name: 🇸🇬SG_80
+  type: vless
+  server: sg003.zestapp778.com
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  network: raw
+  tls: true
+  servername: sg003.zestapp778.com
+  client-fingerprint: chrome
 - name: US VLESS-50
   type: vless
   server: 198.98.48.110
@@ -4953,7 +5282,7 @@ proxies:
   servername: u695098u8fad5a44s552.gogocs.xyz
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇯🇵-1271
+- name: 🇯🇵-1287
   type: vless
   server: 89.125.244.28
   port: 443
@@ -4975,7 +5304,7 @@ proxies:
   sni: TG.freecodes
   servername: TG.freecodes
   skip-cert-verify: true
-- name: US美国-1274
+- name: US美国-1290
   type: vless
   server: 172.67.89.103
   port: 443
@@ -4988,7 +5317,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇭🇰-1275
+- name: 🇭🇰-1291
   type: vless
   server: 91.193.58.195
   port: 443
@@ -5001,7 +5330,7 @@ proxies:
       Host: jamph131-1228.pages.dev
   tls: true
   servername: jamph131-1228.pages.dev
-- name: US美国-1276
+- name: US美国-1292
   type: vless
   server: 162.159.198.1
   port: 443
@@ -5025,7 +5354,7 @@ proxies:
   servername: u695098u54d73951s298.kukuss.top
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: JP日本-1279
+- name: JP日本-1295
   type: vless
   server: 216.173.68.124
   port: 443
@@ -5038,7 +5367,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: 🇸🇬-1283
+- name: 🇸🇬-1299
   type: vless
   server: 172.64.94.251
   port: 8880
@@ -5102,7 +5431,18 @@ proxies:
   servername: u695098u54d73951s298.kukuss.top
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇭🇰-1312
+- name: 🇱🇰
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇭🇰-1329
   type: vless
   server: 91.193.58.243
   port: 80
@@ -5159,7 +5499,7 @@ proxies:
   reality-opts:
     public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
     short-id: '896f52ba2cfca903'
-- name: SG新加坡-1329
+- name: SG新加坡-1346
   type: vless
   server: 159.223.95.46
   port: 443
@@ -5232,7 +5572,7 @@ proxies:
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-- name: US美国-1338
+- name: US美国-1356
   type: vless
   server: 104.18.151.172
   port: 443
@@ -5245,7 +5585,7 @@ proxies:
       Host: ''
   tls: true
   servername: indigostar.click
-- name: SG新加坡-1340
+- name: SG新加坡-1358
   type: vless
   server: 152.42.175.196
   port: 443
@@ -5259,7 +5599,7 @@ proxies:
   tls: true
   servername: n.bitpulse.me
   client-fingerprint: firefox
-- name: US美国-1347
+- name: US美国-1365
   type: vless
   server: 172.64.148.143
   port: 443
@@ -5315,7 +5655,7 @@ proxies:
   sni: 138.2.73.238
   servername: 138.2.73.238
   skip-cert-verify: true
-- name: 🇺🇸-1362
+- name: 🇺🇸-1379
   type: vless
   server: 162.159.60.167
   port: 443
@@ -5329,7 +5669,7 @@ proxies:
   tls: true
   servername: t1s1.rittbo.kdns.fr
   client-fingerprint: chrome
-- name: 🇺🇸-1364
+- name: 🇺🇸-1381
   type: trojan
   server: 216.24.57.7
   port: 443
@@ -5342,7 +5682,7 @@ proxies:
     path: /assignment
     headers:
       Host: ''
-- name: 🇺🇸-1365
+- name: 🇺🇸-1382
   type: vless
   server: 3.170.185.91
   port: 80
@@ -5403,7 +5743,7 @@ proxies:
   udp: true
   sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
   servername: cdn.browseseniorrolesandenhanceyourcareertoday.com
-- name: 🇺🇸美国-1391
+- name: 🇺🇸美国-1410
   type: vless
   server: 188.164.248.151
   port: 2096
@@ -5417,7 +5757,7 @@ proxies:
   tls: true
   servername: d39333476.pages.dev
   client-fingerprint: chrome
-- name: 🇭🇰-1394
+- name: 🇭🇰-1413
   type: vless
   server: 27.44.143.169
   port: 14343
@@ -5428,7 +5768,7 @@ proxies:
   servername: thuk.huaweiyouxuan.com
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-- name: 🇸🇬-1396
+- name: 🇸🇬-1416
   type: vless
   server: 104.21.28.176
   port: 443
@@ -5442,6 +5782,162 @@ proxies:
   tls: true
   servername: sg.lovehk.xyz
   client-fingerprint: chrome
+- name: 🇯🇵JP-172.111.146.64-5659
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇺🇸US-198.98.53.130-5739
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: 🇺🇸US-79.133.109.56-5056
+  type: ss
+  server: 79.133.109.56
+  port: 1036
+  cipher: chacha20-ietf-poly1305
+  password: )1N1E6v0SU_rGTpg
+  udp: true
+- name: 🇯🇵JP-168.138.43.75-0160
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 168.138.43.75
+- name: 🇭🇰HK-167.179.32.53-0055
+  type: vmess
+  server: 167.179.32.53
+  port: 443
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: lg30.cfcdn3.xyz
+  tls: true
+  servername: lg30.cfcdn3.xyz
+- name: 🇭🇰HK-219.76.13.175-0053
+  type: vmess
+  server: 219.76.13.175
+  port: 443
+  uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fastssh/1731390093/6357cedd7a199/
+    headers:
+      Host: sg1.31vpn.com
+  tls: true
+  servername: sg1.31vpn.com
+- name: 🇭🇰HK-23.100.91.61-0051
+  type: trojan
+  server: 23.100.91.61
+  port: 443
+  password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d
+  udp: true
+  sni: rprknb2lcp.eastasia.cloudapp.azure.com
+  servername: rprknb2lcp.eastasia.cloudapp.azure.com
+- name: 🇭🇰HK-23.100.91.146-0049
+  type: trojan
+  server: 23.100.91.146
+  port: 443
+  password: 6d8d2ced-54da-4e79-bfae-2ed55345b954
+  udp: true
+  sni: rprknb2lcp.eastasia.cloudapp.azure.com
+  servername: rprknb2lcp.eastasia.cloudapp.azure.com
+- name: 🇭🇰HK-23.100.91.117-0047
+  type: trojan
+  server: 23.100.91.117
+  port: 443
+  password: 6d8d2ced-54da-4e79-bfae-2ed55345b954
+  udp: true
+  sni: rprknb2lcp.eastasia.cloudapp.azure.com
+  servername: rprknb2lcp.eastasia.cloudapp.azure.com
+- name: 🇭🇰HK-219.76.13.175-0044
+  type: trojan
+  server: tgunivstar.219.76.13.175.sslip.io
+  port: 443
+  password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S
+  udp: true
+  sni: httah.freetrade.link
+  servername: httah.freetrade.link
+- name: 🇭🇰HK-219.76.13.180-0042
+  type: trojan
+  server: 219.76.13.180
+  port: 443
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
+  udp: true
+  sni: stutter.freetrade.link
+  servername: stutter.freetrade.link
+- name: 🇭🇰HK-219.76.13.181-0041
+  type: trojan
+  server: univstar.219.76.13.181.sslip.io
+  port: 443
+  password: 951ca91e-c27c-4b18-bf27-aecf16239524
+  udp: true
+  sni: s114.internetazad.pro
+  servername: s114.internetazad.pro
+- name: 🇯🇵JP-20.46.182.185-0038
+  type: trojan
+  server: 20.46.182.185
+  port: 443
+  password: 6d8d2ced-54da-4e79-bfae-2ed55345b954
+  udp: true
+  sni: rprknb2lcp.eastasia.cloudapp.azure.com
+  servername: rprknb2lcp.eastasia.cloudapp.azure.com
+- name: 🇭🇰HK-219.76.13.181-0037
+  type: vmess
+  server: 219.76.13.181
+  port: 443
+  uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fastssh/1731390093/6357cedd7a199/
+    headers:
+      Host: sg1.31vpn.com
+  tls: true
+  servername: sg1.31vpn.com
+- name: 🇸🇬SG-188.166.186.249-0036
+  type: vmess
+  server: univstar.188.166.186.249.sslip.io
+  port: 443
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /wmzmvws
+    headers:
+      Host: goodfamily19.site
+  tls: true
+  servername: goodfamily19.site
 - name: 🇸🇬 SG新加坡
   type: vmess
   server: 2001:bc8:32d7:225::3
@@ -5477,7 +5973,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: 🇭🇰HK香港丨-1416
+- name: 🇭🇰HK香港丨-1480
   type: vmess
   server: u2frxj0g13vdi0wo.v.3dns.vip
   port: 443
@@ -5492,7 +5988,7 @@ proxies:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
   tls: true
   servername: U2FRxj0G13vDI0Wo.v.3dns.vip
-- name: US美国(mibei77.com 米贝节点分享)-1418
+- name: US美国(mibei77.com 米贝节点分享)-1482
   type: vless
   server: 50.62.195.4
   port: 80
@@ -5503,7 +5999,7 @@ proxies:
     path: '%2Fpyip%3DTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
     headers:
       Host: raspy-feather-12ec.137-257.workers.dev
-- name: US美国(mibei77.com 米贝节点分享)-1419
+- name: US美国(mibei77.com 米贝节点分享)-1483
   type: trojan
   server: 162.159.136.234
   port: 443
@@ -5516,7 +6012,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1420
+- name: US美国(mibei77.com 米贝节点分享)-1484
   type: trojan
   server: 172.67.221.242
   port: 443
@@ -5529,7 +6025,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1421
+- name: US美国(mibei77.com 米贝节点分享)-1485
   type: trojan
   server: 130.250.137.171
   port: 443
@@ -5542,7 +6038,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1422
+- name: US美国(mibei77.com 米贝节点分享)-1486
   type: trojan
   server: 104.17.177.143
   port: 443
@@ -5555,7 +6051,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1423
+- name: US美国(mibei77.com 米贝节点分享)-1487
   type: vless
   server: core-data.gorekmas.online
   port: 443
@@ -5569,7 +6065,7 @@ proxies:
   reality-opts:
     public-key: CRh0VOb2qvDm4H89m6qiHg_9M6nnJ0f_h0kpPitA6hw
     short-id: '266337e69bb1f189'
-- name: US美国(mibei77.com 米贝节点分享)-1424
+- name: US美国(mibei77.com 米贝节点分享)-1488
   type: trojan
   server: join-telegram-channel-tirexnet.trex.kdns.fr
   port: 443
@@ -5582,7 +6078,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1425
+- name: US美国(mibei77.com 米贝节点分享)-1489
   type: trojan
   server: 104.18.152.149
   port: 443
@@ -5595,7 +6091,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1426
+- name: US美国(mibei77.com 米贝节点分享)-1490
   type: trojan
   server: 104.18.152.103
   port: 443
@@ -5608,7 +6104,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1427
+- name: US美国(mibei77.com 米贝节点分享)-1491
   type: trojan
   server: ip.myip2.qzz.io
   port: 443
@@ -5621,7 +6117,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1428
+- name: US美国(mibei77.com 米贝节点分享)-1492
   type: trojan
   server: 104.18.152.246
   port: 443
@@ -5634,7 +6130,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1429
+- name: US美国(mibei77.com 米贝节点分享)-1493
   type: trojan
   server: 104.21.8.107
   port: 443
@@ -5647,7 +6143,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1430
+- name: US美国(mibei77.com 米贝节点分享)-1494
   type: trojan
   server: 104.18.152.230
   port: 443
@@ -5660,7 +6156,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1431
+- name: US美国(mibei77.com 米贝节点分享)-1495
   type: trojan
   server: 104.16.174.143
   port: 443
@@ -5673,7 +6169,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1432
+- name: US美国(mibei77.com 米贝节点分享)-1496
   type: trojan
   server: 104.16.174.6
   port: 443
@@ -5686,7 +6182,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1433
+- name: US美国(mibei77.com 米贝节点分享)-1497
   type: trojan
   server: 104.18.152.210
   port: 443
@@ -5699,7 +6195,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1434
+- name: US美国(mibei77.com 米贝节点分享)-1498
   type: trojan
   server: 104.16.174.109
   port: 443
@@ -5712,7 +6208,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1435
+- name: US美国(mibei77.com 米贝节点分享)-1499
   type: trojan
   server: 104.18.152.179
   port: 443
@@ -5725,7 +6221,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1436
+- name: US美国(mibei77.com 米贝节点分享)-1500
   type: trojan
   server: 104.18.152.108
   port: 443
@@ -5738,7 +6234,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1437
+- name: US美国(mibei77.com 米贝节点分享)-1501
   type: trojan
   server: 104.18.12.149
   port: 443
@@ -5751,7 +6247,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1438
+- name: US美国(mibei77.com 米贝节点分享)-1502
   type: trojan
   server: 104.16.174.34
   port: 443
@@ -5764,7 +6260,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1439
+- name: US美国(mibei77.com 米贝节点分享)-1503
   type: trojan
   server: 104.16.174.22
   port: 443
@@ -5777,7 +6273,7 @@ proxies:
     path: '%2F%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1440
+- name: US美国(mibei77.com 米贝节点分享)-1504
   type: trojan
   server: 162.159.254.191
   port: 443
@@ -5790,7 +6286,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1441
+- name: US美国(mibei77.com 米贝节点分享)-1505
   type: trojan
   server: 104.18.152.161
   port: 443
@@ -5803,7 +6299,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1442
+- name: US美国(mibei77.com 米贝节点分享)-1506
   type: trojan
   server: 104.17.111.1
   port: 443
@@ -5816,7 +6312,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1443
+- name: US美国(mibei77.com 米贝节点分享)-1507
   type: trojan
   server: 167.82.76.7
   port: 443
@@ -5829,7 +6325,7 @@ proxies:
     path: '%2F'
     headers:
       Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
-- name: US美国(mibei77.com 米贝节点分享)-1444
+- name: US美国(mibei77.com 米贝节点分享)-1508
   type: trojan
   server: 104.18.152.113
   port: 443
@@ -5842,7 +6338,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1445
+- name: US美国(mibei77.com 米贝节点分享)-1509
   type: vless
   server: 104.194.84.188
   port: 8443
@@ -5856,7 +6352,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-1446
+- name: US美国(mibei77.com 米贝节点分享)-1510
   type: vless
   server: 207.57.133.53
   port: 51135
@@ -5869,7 +6365,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
-- name: US美国(mibei77.com 米贝节点分享)-1447
+- name: US美国(mibei77.com 米贝节点分享)-1511
   type: vless
   server: 207.57.134.242
   port: 59672
@@ -5882,7 +6378,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: MyT8CmpFM5SbEol-rsH-Gm-I8GJLAfRLQnGnyNCXrho
-- name: US美国(mibei77.com 米贝节点分享)-1448
+- name: US美国(mibei77.com 米贝节点分享)-1512
   type: vless
   server: 207.57.135.37
   port: 58979
@@ -5895,7 +6391,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: BMGv1azVuzaXicmRgvGIbDdRv-9tIjfvtSCKRh1EfVw
-- name: US美国(mibei77.com 米贝节点分享)-1449
+- name: US美国(mibei77.com 米贝节点分享)-1513
   type: vless
   server: 167.160.177.68
   port: 2096
@@ -5909,7 +6405,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-1450
+- name: US美国(mibei77.com 米贝节点分享)-1514
   type: trojan
   server: 199.232.78.160
   port: 443
@@ -5922,7 +6418,7 @@ proxies:
     path: '%2F'
     headers:
       Host: mitivpn---ss--s---mitivpn-44e.global.ssl.fastly.net
-- name: US美国(mibei77.com 米贝节点分享)-1451
+- name: US美国(mibei77.com 米贝节点分享)-1515
   type: vless
   server: 68.64.180.201
   port: 35957
@@ -5935,7 +6431,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 79XmdoMC-YDcAhXMX6TGYfajcPWxVTSwIpbP0-QdMV8
-- name: US美国(mibei77.com 米贝节点分享)-1452
+- name: US美国(mibei77.com 米贝节点分享)-1516
   type: vless
   server: 38.207.177.203
   port: 24681
@@ -5948,7 +6444,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: t-BhtrNH7C1zTuLOuBu4tXeIv3JR-cN88pVFywIkti4
-- name: US美国(mibei77.com 米贝节点分享)-1453
+- name: US美国(mibei77.com 米贝节点分享)-1517
   type: vless
   server: 207.57.135.124
   port: 2128
@@ -5961,7 +6457,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 0zFniJLY80LQ5zKKB-X6r-tpHgAI6yqUVxJFQGG9SUM
-- name: US美国(mibei77.com 米贝节点分享)-1454
+- name: US美国(mibei77.com 米贝节点分享)-1518
   type: vless
   server: 68.64.182.58
   port: 44407
@@ -5974,7 +6470,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 1jRHait01lfgKnhfctcvx6EbGtvBxyZyi4JMcIl3qzI
-- name: US美国(mibei77.com 米贝节点分享)-1455
+- name: US美国(mibei77.com 米贝节点分享)-1519
   type: vless
   server: 68.64.183.179
   port: 53517
@@ -5987,7 +6483,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: rlAsfb-BXMZTnJpvvDrVkP-FO7Ll4-7sWVDPD7GThX4
-- name: US美国(mibei77.com 米贝节点分享)-1456
+- name: US美国(mibei77.com 米贝节点分享)-1520
   type: vless
   server: 207.57.129.114
   port: 14934
@@ -6000,7 +6496,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: C9qIqeSCAkCLIqki3n21hyeILLltWcZJ6M0HgRTGmk4
-- name: US美国(mibei77.com 米贝节点分享)-1457
+- name: US美国(mibei77.com 米贝节点分享)-1521
   type: vless
   server: 207.57.131.116
   port: 60156
@@ -6013,7 +6509,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 0WCIcNPaAc_UqgQmKptY2vvQKSCjz7LkoG6YEgtzuFs
-- name: US美国(mibei77.com 米贝节点分享)-1458
+- name: US美国(mibei77.com 米贝节点分享)-1522
   type: vless
   server: 207.57.131.82
   port: 42038
@@ -6026,7 +6522,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: uK4Syxig1VpR42JEkbld2ZIaymNkt5MW4UMt21LsaRA
-- name: US美国(mibei77.com 米贝节点分享)-1459
+- name: US美国(mibei77.com 米贝节点分享)-1523
   type: vless
   server: 38.147.171.99
   port: 46042
@@ -6039,7 +6535,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: BjAkOapbZN6R4cUgz8Ye-o-uyWz6o_LoUlI5kbURMh0
-- name: US美国(mibei77.com 米贝节点分享)-1460
+- name: US美国(mibei77.com 米贝节点分享)-1524
   type: vless
   server: 207.57.133.221
   port: 4815
@@ -6052,7 +6548,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: toqN3-gRGsuegqtfwm4lu7CMQvvytYJPwdldFyqLYEQ
-- name: US美国(mibei77.com 米贝节点分享)-1461
+- name: US美国(mibei77.com 米贝节点分享)-1525
   type: vless
   server: 68.64.183.115
   port: 27684
@@ -6065,7 +6561,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: CTB0zNN-oslyk5a3NfliC_nUakFUn94QH8X_rN5ZvlQ
-- name: US美国(mibei77.com 米贝节点分享)-1462
+- name: US美国(mibei77.com 米贝节点分享)-1526
   type: vless
   server: 68.64.183.164
   port: 14163
@@ -6078,7 +6574,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 40j_uKu51A06ECDlinwC6Q7h7ZPWs9Bkv24_EZdcvnQ
-- name: US美国(mibei77.com 米贝节点分享)-1463
+- name: US美国(mibei77.com 米贝节点分享)-1527
   type: vless
   server: rs2.univesalsrv.com
   port: 443
@@ -6093,7 +6589,7 @@ proxies:
   reality-opts:
     public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
     short-id: '1469af2040b7c323'
-- name: US美国(mibei77.com 米贝节点分享)-1464
+- name: US美国(mibei77.com 米贝节点分享)-1528
   type: vless
   server: 150.40.126.19
   port: 443
@@ -6108,7 +6604,7 @@ proxies:
   reality-opts:
     public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
     short-id: '1469af2040b7c323'
-- name: US美国(mibei77.com 米贝节点分享)-1465
+- name: US美国(mibei77.com 米贝节点分享)-1529
   type: vless
   server: 150.40.126.24
   port: 443
@@ -6123,7 +6619,7 @@ proxies:
   reality-opts:
     public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
     short-id: '4872856d5489c37d'
-- name: US美国(mibei77.com 米贝节点分享)-1466
+- name: US美国(mibei77.com 米贝节点分享)-1530
   type: trojan
   server: 104.17.111.8
   port: 443
@@ -6136,7 +6632,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1467
+- name: US美国(mibei77.com 米贝节点分享)-1531
   type: vless
   server: 45.9.156.24
   port: 443
@@ -6151,7 +6647,7 @@ proxies:
   reality-opts:
     public-key: 0f0dh_FUju5cHgQcIwUjHvxQb9aIZ00p0kZRHeE7Ey4
     short-id: '501ab3325b77e1ca'
-- name: US美国(mibei77.com 米贝节点分享)-1468
+- name: US美国(mibei77.com 米贝节点分享)-1532
   type: trojan
   server: 104.17.111.3
   port: 443
@@ -6164,7 +6660,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1469
+- name: US美国(mibei77.com 米贝节点分享)-1533
   type: trojan
   server: 104.18.23.63
   port: 443
@@ -6177,7 +6673,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1470
+- name: US美国(mibei77.com 米贝节点分享)-1534
   type: trojan
   server: 104.16.174.185
   port: 443
@@ -6190,7 +6686,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1471
+- name: US美国(mibei77.com 米贝节点分享)-1535
   type: trojan
   server: 104.18.152.97
   port: 443
@@ -6203,7 +6699,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1472
+- name: US美国(mibei77.com 米贝节点分享)-1536
   type: trojan
   server: 104.18.152.50
   port: 443
@@ -6216,7 +6712,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1473
+- name: US美国(mibei77.com 米贝节点分享)-1537
   type: trojan
   server: 104.18.152.244
   port: 443
@@ -6229,7 +6725,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1474
+- name: US美国(mibei77.com 米贝节点分享)-1538
   type: trojan
   server: 172.67.188.109
   port: 443
@@ -6242,7 +6738,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.ignitelimit.com
-- name: US美国(mibei77.com 米贝节点分享)-1475
+- name: US美国(mibei77.com 米贝节点分享)-1539
   type: trojan
   server: 104.16.174.148
   port: 443
@@ -6255,7 +6751,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1476
+- name: US美国(mibei77.com 米贝节点分享)-1540
   type: trojan
   server: 104.16.174.121
   port: 443
@@ -6268,7 +6764,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1477
+- name: US美国(mibei77.com 米贝节点分享)-1541
   type: trojan
   server: 104.16.174.46
   port: 443
@@ -6281,7 +6777,7 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: ''
-- name: US美国(mibei77.com 米贝节点分享)-1478
+- name: US美国(mibei77.com 米贝节点分享)-1542
   type: vless
   server: 104.143.204.237
   port: 443
@@ -6295,7 +6791,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: US美国(mibei77.com 米贝节点分享)-1479
+- name: US美国(mibei77.com 米贝节点分享)-1543
   type: vless
   server: 104.143.204.23
   port: 443
@@ -6323,7 +6819,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: TW台湾(mibei77.com 米贝节点分享)-1482
+- name: TW台湾(mibei77.com 米贝节点分享)-1546
   type: vless
   server: 140.235.39.19
   port: 443
@@ -6337,7 +6833,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: TW台湾(mibei77.com 米贝节点分享)-1483
+- name: TW台湾(mibei77.com 米贝节点分享)-1547
   type: vless
   server: 89.46.42.92
   port: 2053
@@ -6351,7 +6847,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: TW台湾(mibei77.com 米贝节点分享)-1484
+- name: TW台湾(mibei77.com 米贝节点分享)-1548
   type: vless
   server: 140.235.39.162
   port: 443
@@ -6365,7 +6861,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-1485
+- name: SG新加坡(mibei77.com 米贝节点分享)-1549
   type: vless
   server: 103.195.188.192
   port: 443
@@ -6379,7 +6875,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-1486
+- name: SG新加坡(mibei77.com 米贝节点分享)-1550
   type: vless
   server: 103.195.188.206
   port: 443
@@ -6393,7 +6889,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: SG新加坡(mibei77.com 米贝节点分享)-1487
+- name: SG新加坡(mibei77.com 米贝节点分享)-1551
   type: vless
   server: 103.170.217.60
   port: 443
@@ -6407,7 +6903,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1492
+- name: JP日本(mibei77.com 米贝节点分享)-1556
   type: vless
   server: 31.57.218.99
   port: 443
@@ -6421,7 +6917,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1493
+- name: JP日本(mibei77.com 米贝节点分享)-1557
   type: vless
   server: 92.113.124.228
   port: 443
@@ -6435,7 +6931,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1494
+- name: JP日本(mibei77.com 米贝节点分享)-1558
   type: vless
   server: 154.19.187.190
   port: 443
@@ -6449,7 +6945,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1495
+- name: JP日本(mibei77.com 米贝节点分享)-1559
   type: vless
   server: 132.226.5.163
   port: 443
@@ -6463,7 +6959,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1496
+- name: JP日本(mibei77.com 米贝节点分享)-1560
   type: vless
   server: 102.134.49.108
   port: 8443
@@ -6477,7 +6973,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1497
+- name: JP日本(mibei77.com 米贝节点分享)-1561
   type: vless
   server: 101.142.129.72
   port: 443
@@ -6491,7 +6987,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1498
+- name: JP日本(mibei77.com 米贝节点分享)-1562
   type: vless
   server: 103.31.77.108
   port: 2053
@@ -6505,7 +7001,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1499
+- name: JP日本(mibei77.com 米贝节点分享)-1563
   type: vless
   server: 161.33.29.51
   port: 443
@@ -6519,7 +7015,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: JP日本(mibei77.com 米贝节点分享)-1500
+- name: JP日本(mibei77.com 米贝节点分享)-1564
   type: vless
   server: 45.202.254.133
   port: 443
@@ -6533,7 +7029,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-1506
+- name: HK香港(mibei77.com 米贝节点分享)-1570
   type: vless
   server: 216.23.84.115
   port: 443
@@ -6547,7 +7043,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-1507
+- name: HK香港(mibei77.com 米贝节点分享)-1571
   type: vless
   server: 193.134.211.247
   port: 29417
@@ -6560,7 +7056,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: n9zqA9DrsO1bHnC_e2_e9MAxpyPdC_EA06Dm_rw4oWY
-- name: HK香港(mibei77.com 米贝节点分享)-1508
+- name: HK香港(mibei77.com 米贝节点分享)-1572
   type: vless
   server: 43.161.254.71
   port: 443
@@ -6574,7 +7070,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-1509
+- name: HK香港(mibei77.com 米贝节点分享)-1573
   type: vless
   server: 45.145.228.129
   port: 3077
@@ -6587,7 +7083,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 48zW4lXrGFUEbsQ1JSRrv2yLzmxMsWYSk9KACEG_eFk
-- name: HK香港(mibei77.com 米贝节点分享)-1510
+- name: HK香港(mibei77.com 米贝节点分享)-1574
   type: vless
   server: 103.143.81.124
   port: 3139
@@ -6600,7 +7096,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: RYrYabqY07TQmF41ouUnBSjA6pDhUN4Ms7OKY-KrKh0
-- name: HK香港(mibei77.com 米贝节点分享)-1511
+- name: HK香港(mibei77.com 米贝节点分享)-1575
   type: vless
   server: 103.118.41.121
   port: 443
@@ -6614,7 +7110,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-1512
+- name: HK香港(mibei77.com 米贝节点分享)-1576
   type: vless
   server: 45.145.229.184
   port: 29680
@@ -6627,7 +7123,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: PcmyuWGLbzBiTAqTuui0FSq3DUa6SIXzbDFARaeV23U
-- name: HK香港(mibei77.com 米贝节点分享)-1513
+- name: HK香港(mibei77.com 米贝节点分享)-1577
   type: vless
   server: 83.229.127.18
   port: 27948
@@ -6640,7 +7136,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: ZJbUs5ZBJacR5XKdOKz8rI7ovNMcq0ocdCvsA0Z3ul8
-- name: HK香港(mibei77.com 米贝节点分享)-1514
+- name: HK香港(mibei77.com 米贝节点分享)-1578
   type: vless
   server: 103.143.81.60
   port: 54030
@@ -6653,7 +7149,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 1kifGOu6PhqrZmV4gK1XEmnKsq1Gcr9sqJYw4SQxujY
-- name: HK香港(mibei77.com 米贝节点分享)-1515
+- name: HK香港(mibei77.com 米贝节点分享)-1579
   type: vless
   server: 122.10.119.252
   port: 443
@@ -6667,7 +7163,7 @@ proxies:
   tls: true
   servername: shuma.ccwu.cc
   client-fingerprint: chrome
-- name: HK香港(mibei77.com 米贝节点分享)-1516
+- name: HK香港(mibei77.com 米贝节点分享)-1580
   type: vless
   server: 45.145.228.155
   port: 2574
@@ -6680,7 +7176,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: JXdqcykVt3Ue2ToOemH_AHoZUnQKbGIzaUmeZY7o32Y
-- name: HK香港(mibei77.com 米贝节点分享)-1517
+- name: HK香港(mibei77.com 米贝节点分享)-1581
   type: vless
   server: 45.144.137.215
   port: 29827
@@ -6693,7 +7189,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: aFwfZMfFUyzU8RB_vh3fxtjUxDcQlu4QapSdQH0jG04
-- name: HK香港(mibei77.com 米贝节点分享)-1518
+- name: HK香港(mibei77.com 米贝节点分享)-1582
   type: vless
   server: 103.118.254.37
   port: 443
@@ -10171,7 +10667,7 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   client-fingerprint: chrome
-- name: 🇺🇸_US_美国-3379
+- name: 🇺🇸_US_美国-3443
   type: trojan
   server: 23.149.28.8.sslip.io
   port: 8443
@@ -10180,7 +10676,7 @@ proxies:
   sni: 23.149.28.8.sslip.io
   servername: 23.149.28.8.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+- name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡-3451
   type: vless
   server: 1.sdwan.realm-sync.com
   port: 55567
@@ -10194,7 +10690,7 @@ proxies:
   reality-opts:
     public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
     short-id: 'f3f70ca767'
-- name: 🇭🇰_HK_中国香港-3397
+- name: 🇭🇰_HK_中国香港-3461
   type: trojan
   server: 43.198.84.209
   port: 11035
@@ -10398,21 +10894,6 @@ proxies:
       Host: JP032009.ssgreen.org
   tls: true
   servername: JP032009.ssgreen.org
-- name: 未知 VMESS-1269 | free-nodes
-  type: vmess
-  server: JP032010.ssgreen.org
-  port: 443
-  uuid: 114af209-c748-49eb-9e45-629986aacfbb
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032010.ssgreen.org
-  tls: true
-  servername: JP032010.ssgreen.org
 - name: 未知 VMESS-1271 | free-nodes
   type: vmess
   server: US032010.westmgreen.com
@@ -10716,389 +11197,418 @@ proxy-groups:
   type: select
   proxies:
   - ♻️ 自动选择
-  - JP日本(mibei77.com 米贝节点分享)
-  - SG新加坡(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)-2
+  - US美国(mibei77.com 米贝节点分享)-3
+  - US美国(mibei77.com 米贝节点分享)-4
   - US美国(mibei77.com 米贝节点分享)-5
   - US美国(mibei77.com 米贝节点分享)-6
-  - JP日本(mibei77.com 米贝节点分享)-7
+  - US美国(mibei77.com 米贝节点分享)-7
   - US美国(mibei77.com 米贝节点分享)-8
   - US美国(mibei77.com 米贝节点分享)-9
   - US美国(mibei77.com 米贝节点分享)-10
+  - US美国(mibei77.com 米贝节点分享)-11
+  - US美国(mibei77.com 米贝节点分享)-12
+  - US美国(mibei77.com 米贝节点分享)-13
   - US美国(mibei77.com 米贝节点分享)-14
-  - SG新加坡(mibei77.com 米贝节点分享)-19
+  - US美国(mibei77.com 米贝节点分享)-15
+  - US美国(mibei77.com 米贝节点分享)-16
+  - US美国(mibei77.com 米贝节点分享)-17
+  - US美国(mibei77.com 米贝节点分享)-18
+  - US美国(mibei77.com 米贝节点分享)-19
+  - US美国(mibei77.com 米贝节点分享)-20
+  - US美国(mibei77.com 米贝节点分享)-21
   - US美国(mibei77.com 米贝节点分享)-22
+  - US美国(mibei77.com 米贝节点分享)-23
+  - US美国(mibei77.com 米贝节点分享)-24
+  - US美国(mibei77.com 米贝节点分享)-25
   - US美国(mibei77.com 米贝节点分享)-26
+  - US美国(mibei77.com 米贝节点分享)-27
+  - US美国(mibei77.com 米贝节点分享)-28
   - US美国(mibei77.com 米贝节点分享)-29
+  - US美国(mibei77.com 米贝节点分享)-30
+  - US美国(mibei77.com 米贝节点分享)-31
   - US美国(mibei77.com 米贝节点分享)-32
+  - US美国(mibei77.com 米贝节点分享)-33
   - US美国(mibei77.com 米贝节点分享)-34
   - US美国(mibei77.com 米贝节点分享)-35
+  - US美国(mibei77.com 米贝节点分享)-36
+  - US美国(mibei77.com 米贝节点分享)-37
   - US美国(mibei77.com 米贝节点分享)-38
-  - SG新加坡(mibei77.com 米贝节点分享)-43
+  - US美国(mibei77.com 米贝节点分享)-39
+  - US美国(mibei77.com 米贝节点分享)-40
+  - US美国(mibei77.com 米贝节点分享)-41
+  - US美国(mibei77.com 米贝节点分享)-42
+  - US美国(mibei77.com 米贝节点分享)-43
   - US美国(mibei77.com 米贝节点分享)-44
   - US美国(mibei77.com 米贝节点分享)-45
+  - US美国(mibei77.com 米贝节点分享)-46
+  - US美国(mibei77.com 米贝节点分享)-47
   - US美国(mibei77.com 米贝节点分享)-48
+  - US美国(mibei77.com 米贝节点分享)-49
   - US美国(mibei77.com 米贝节点分享)-50
+  - US美国(mibei77.com 米贝节点分享)-51
+  - US美国(mibei77.com 米贝节点分享)-52
+  - US美国(mibei77.com 米贝节点分享)-53
+  - US美国(mibei77.com 米贝节点分享)-54
+  - US美国(mibei77.com 米贝节点分享)-55
   - US美国(mibei77.com 米贝节点分享)-56
-  - HK香港(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)-57
+  - US美国(mibei77.com 米贝节点分享)-58
+  - US美国(mibei77.com 米贝节点分享)-59
   - US美国(mibei77.com 米贝节点分享)-60
   - US美国(mibei77.com 米贝节点分享)-61
   - US美国(mibei77.com 米贝节点分享)-62
-  - HK香港(mibei77.com 米贝节点分享)-64
+  - US美国(mibei77.com 米贝节点分享)-63
+  - US美国(mibei77.com 米贝节点分享)-64
   - US美国(mibei77.com 米贝节点分享)-65
-  - SG新加坡(mibei77.com 米贝节点分享)-66
+  - US美国(mibei77.com 米贝节点分享)-66
   - US美国(mibei77.com 米贝节点分享)-67
   - US美国(mibei77.com 米贝节点分享)-68
-  - SG新加坡(mibei77.com 米贝节点分享)-69
+  - US美国(mibei77.com 米贝节点分享)-69
   - US美国(mibei77.com 米贝节点分享)-70
-  - SG新加坡(mibei77.com 米贝节点分享)-72
-  - HK香港(mibei77.com 米贝节点分享)-73
+  - US美国(mibei77.com 米贝节点分享)-71
+  - US美国(mibei77.com 米贝节点分享)-72
+  - US美国(mibei77.com 米贝节点分享)-73
   - US美国(mibei77.com 米贝节点分享)-74
-  - SG新加坡(mibei77.com 米贝节点分享)-77
+  - US美国(mibei77.com 米贝节点分享)-75
+  - US美国(mibei77.com 米贝节点分享)-76
+  - US美国(mibei77.com 米贝节点分享)-77
   - US美国(mibei77.com 米贝节点分享)-78
-  - US美国(mibei77.com 米贝节点分享)-79
-  - US美国(mibei77.com 米贝节点分享)-80
-  - HK香港(mibei77.com 米贝节点分享)-81
-  - HK香港(mibei77.com 米贝节点分享)-82
-  - US美国(mibei77.com 米贝节点分享)-83
-  - HK香港(mibei77.com 米贝节点分享)-84
-  - US美国(mibei77.com 米贝节点分享)-88
-  - US美国(mibei77.com 米贝节点分享)-89
-  - US美国(mibei77.com 米贝节点分享)-92
-  - US美国(mibei77.com 米贝节点分享)-93
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - JP日本(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)-85
+  - HK香港(mibei77.com 米贝节点分享)-86
+  - HK香港(mibei77.com 米贝节点分享)-87
+  - HK香港(mibei77.com 米贝节点分享)-88
+  - HK香港(mibei77.com 米贝节点分享)-89
+  - HK香港(mibei77.com 米贝节点分享)-90
+  - HK香港(mibei77.com 米贝节点分享)-91
+  - HK香港(mibei77.com 米贝节点分享)-92
+  - HK香港(mibei77.com 米贝节点分享)-93
   - HK香港(mibei77.com 米贝节点分享)-94
-  - US美国(mibei77.com 米贝节点分享)-95
-  - US美国(mibei77.com 米贝节点分享)-96
-  - US美国(mibei77.com 米贝节点分享)-97
-  - US美国(mibei77.com 米贝节点分享)-98
-  - US美国(mibei77.com 米贝节点分享)-102
-  - US美国(mibei77.com 米贝节点分享)-106
-  - US美国(mibei77.com 米贝节点分享)-108
-  - HK香港(mibei77.com 米贝节点分享)-109
-  - US美国(mibei77.com 米贝节点分享)-110
-  - US美国(mibei77.com 米贝节点分享)-111
-  - US美国(mibei77.com 米贝节点分享)-113
-  - US美国(mibei77.com 米贝节点分享)-114
-  - US美国(mibei77.com 米贝节点分享)-115
-  - US美国(mibei77.com 米贝节点分享)-116
-  - US美国(mibei77.com 米贝节点分享)-117
-  - US美国(mibei77.com 米贝节点分享)-118
-  - US美国(mibei77.com 米贝节点分享)-119
-  - HK香港(mibei77.com 米贝节点分享)-121
-  - US美国(mibei77.com 米贝节点分享)-122
-  - US美国(mibei77.com 米贝节点分享)-123
-  - US美国(mibei77.com 米贝节点分享)-124
-  - US美国(mibei77.com 米贝节点分享)-125
-  - US美国(mibei77.com 米贝节点分享)-127
+  - HK香港(mibei77.com 米贝节点分享)-95
+  - HK香港(mibei77.com 米贝节点分享)-96
+  - HK香港(mibei77.com 米贝节点分享)-97
+  - HK香港(mibei77.com 米贝节点分享)-98
+  - HK香港(mibei77.com 米贝节点分享)-99
+  - HK香港(mibei77.com 米贝节点分享)-100
+  - SG新加坡(mibei77.com 米贝节点分享)-107
+  - SG新加坡(mibei77.com 米贝节点分享)-108
+  - SG新加坡(mibei77.com 米贝节点分享)-109
+  - SG新加坡(mibei77.com 米贝节点分享)-110
+  - SG新加坡(mibei77.com 米贝节点分享)-111
+  - JP日本(mibei77.com 米贝节点分享)-129
   - JP日本(mibei77.com 米贝节点分享)-130
-  - SG新加坡(mibei77.com 米贝节点分享)-135
-  - JP日本(mibei77.com 米贝节点分享)-136
-  - JP日本(mibei77.com 米贝节点分享)-137
-  - JP日本(mibei77.com 米贝节点分享)-138
-  - JP日本(mibei77.com 米贝节点分享)-139
-  - US美国(mibei77.com 米贝节点分享)-141
-  - US美国(mibei77.com 米贝节点分享)-142
-  - US美国(mibei77.com 米贝节点分享)-143
-  - HK香港(mibei77.com 米贝节点分享)-144
   - 🇺🇸
   - 🇺🇸US_368
   - US美国
-  - US美国-166
   - US美国-169
   - US美国-172
+  - US美国-175
+  - 美国(shop.tgaaaa.co
   - 🇯🇵JP_35
   - 🇯🇵
   - 🇺🇸US_67
-  - 🇺🇸-186
+  - 🇺🇸-191
   - 🇺🇸US_439
   - 🇺🇸US_438
   - 🇺🇸US_562
-  - 美国(shop.tgaaaa.co
+  - 美国(shop.tgaaaa.co-200
   - 🇸🇬
   - 🇺🇸US_317
   - 🇺🇸US_497
+  - US美国-210
   - 🇺🇸US_127
   - 🇺🇸US_504
-  - US美国-216
+  - US美国-220
   - 🇭🇰HK_25
   - JP日本
-  - US美国-225
+  - US美国-228
   - 🇹🇼TW_6
   - 🇺🇸US_563
   - US VLESS-62
-  - US美国-240
-  - 🇺🇸-245
+  - US美国-243
+  - 🇺🇸-248
   - 🇺🇸US_24
   - 🇹🇭TH_7
-  - US美国-251
+  - US美国-254
   - CA加拿大
+  - SG新加坡
   - 🇺🇸US_427
   - 🇺🇸US_219
-  - US美国-261
+  - US美国-265
   - 🇺🇸US_367
   - 🇭🇰
   - 🇺🇸US_399
   - 🇺🇸US_136
-  - JP日本-268
+  - JP日本-272
   - 🗽🇺🇸
   - 🇸🇬SG_97
   - 🇺🇸US_36
-  - 美国(shop.tgaaaa.co-294
-  - JP日本-296
-  - 🇺🇸-304
-  - 🇺🇸-305
+  - 美国(shop.tgaaaa.co-297
+  - JP日本-301
   - 🇺🇸-309
-  - US美国-312
+  - 🇺🇸-310
+  - 🇺🇸-314
   - 🇯🇵JP_25
   - 🇺🇸US_448
-  - 美国(shop.tgaaaa.co-319
-  - 🇭🇰-331
+  - 美国(shop.tgaaaa.co-323
+  - 🇭🇰-335
   - 🇺🇸US_561
-  - 🇺🇸-340
+  - 🇺🇸-344
   - 🇺🇸US_424
   - 🇯🇵JP_31
-  - 🇭🇰-345
+  - 🇭🇰-349
   - 🇯🇵JP_37
   - 🇺🇸US_167
   - 🇸🇬SG_39
   - 🇸🇬SG_77
   - HK VLESS-44
-  - US美国-365
+  - US美国-369
   - 🇺🇸US_337
   - 🇺🇸US_458
-  - US美国-370
-  - 美国(shop.tgaaaa.co-371
-  - US美国-372
+  - 美国(shop.tgaaaa.co-374
+  - US美国-375
   - 🇺🇸_US_美国
-  - 🇭🇰-378
-  - US美国-381
-  - US美国-386
+  - 🇭🇰-381
+  - US美国-384
+  - US美国-389
   - 🇺🇸US_411
-  - US美国-395
   - US美国-398
+  - US美国-401
   - 🇸🇬SG_83
   - 🇺🇸US_14
   - US VLESS-72
   - 🇺🇸US_318
   - 🇺🇸US_285
-  - US美国-428
+  - SG新加坡-427
+  - US美国-430
   - 🇺🇸US_509
-  - US美国-435
-  - JP日本-438
-  - US美国-441
+  - US美国-437
+  - JP日本-440
+  - US美国-443
   - 🇸🇬SG_95
-  - US美国-449
+  - US美国-451
   - US VLESS-83
-  - 🇭🇰-455
-  - US美国-459
+  - 🇭🇰-457
+  - 🇺🇸US_492
+  - US美国-462
   - HK VLESS-12
   - 🇯🇵JP_30
-  - 美国(shop.tgaaaa.co-479
-  - 🇺🇸-482
+  - 美国(shop.tgaaaa.co-482
+  - US美国-483
+  - 🇺🇸-485
   - 🇺🇸美国
   - 🇭🇰_HK_中国香港
-  - 🇺🇸-501
+  - 🇺🇸-504
   - 🇺🇸US_238
   - 美国_789145
   - 🇺🇸US_247
   - 🇺🇸US_505
-  - US美国-525
+  - US美国-530
   - 🇺🇸US_189
   - US VLESS-74
-  - 🇺🇸-537
+  - 🇺🇸-542
   - 🇺🇸US_425
-  - US美国-547
+  - US美国-552
   - US VLESS-34
   - US VLESS-13
-  - 🇭🇰-554
+  - 🇭🇰-560
   - 🇺🇸US_349
-  - 🇸🇬-559
-  - JP日本-560
-  - 🇭🇰-565
+  - 🇸🇬-565
+  - JP日本-566
+  - 🇭🇰-571
   - 🇺🇸US_233
-  - 🇺🇸-571
+  - 🇺🇸-577
   - 🇺🇸US_420
   - HK香港
   - 🇹🇼
   - 🇺🇸US_550
-  - 🇭🇰-589
-  - 美国(shop.tgaaaa.co-595
+  - 🇭🇰-595
   - US VLESS-78
   - 🇭🇰HK_66
-  - 🇭🇰-605
+  - 🇭🇰-610
   - 🇭🇰HK_74
   - 🇺🇸US_451
   - 🇸🇬SG_92
-  - 美国(shop.tgaaaa.co-617
+  - 美国(shop.tgaaaa.co-622
   - 🇺🇸US_264
   - 🇺🇸US_137
-  - 🇺🇸-625
+  - 🇺🇸-630
+  - 🇺🇸US_538
   - 🇺🇸US_445
   - 🇸🇬SG_56
-  - 美国(shop.tgaaaa.co-636
-  - US美国-637
-  - 🇺🇸-638
+  - 美国(shop.tgaaaa.co-644
+  - US美国-645
+  - 🇺🇸-646
   - 🇸🇬SG_78
   - 🇺🇸US_58
   - 🇺🇸US_542
   - US VLESS-22
   - 🇺🇸US_397
-  - 🇭🇰-660
+  - 🇭🇰-669
   - 🇺🇸US_342
   - 🇺🇸US_302
-  - 美国(shop.tgaaaa.co-665
+  - 美国(shop.tgaaaa.co-674
   - 🇸🇬SG_87
-  - CA加拿大-672
+  - CA加拿大-681
   - 🇺🇸US_74
   - 🇺🇸US_339
-  - 美国(shop.tgaaaa.co-677
-  - 🇸🇬-679
-  - SG新加坡
+  - 美国(shop.tgaaaa.co-686
+  - 🇸🇬-688
+  - SG新加坡-689
   - 🇭🇰HK_63
   - 🇸🇬SG_46
   - 🇸🇬SG_89
   - 🇺🇸US_576
   - 🇺🇸US_344
-  - 🇭🇰-699
-  - 🇺🇸US_90
   - 🇭🇰-709
+  - 🇺🇸US_90
+  - 🇭🇰-721
   - 🇺🇸US_457
   - 🇯🇵JP_2
   - 🇺🇸US_500
-  - 🇯🇵-728
+  - 🇯🇵-740
   - US VLESS-19
-  - 🇸🇬-732
-  - 🇭🇰-738
-  - 🇺🇸-740
-  - 🇯🇵-741
+  - 🇸🇬-744
+  - 🇭🇰-750
+  - 🇺🇸-752
+  - 🇯🇵-753
   - 🇺🇸US_476
   - 🇺🇸US_289
   - 🇭🇰HK_1
   - 🇺🇸US_526
-  - 🇺🇸-766
+  - 🇺🇸-776
   - 🇺🇸US_266
   - 🇺🇸US_532
   - 🇯🇵JP_34
-  - US美国-770
-  - 🇯🇵-774
+  - US美国-780
+  - 🇯🇵-784
   - US VLESS-23
-  - US美国-778
+  - US美国-788
   - 🇭🇰HK_8
-  - US美国-790
+  - US美国-801
   - 🇺🇸US_572
-  - 🇺🇸_US_美国-795
+  - 🇺🇸_US_美国-807
   - 🇸🇬SG_79
-  - 🇺🇸-799
-  - 美国(shop.tgaaaa.co-801
-  - JP日本-809
-  - 🇺🇸-810
-  - 🇺🇸-814
+  - 🇺🇸-811
+  - 美国(shop.tgaaaa.co-813
+  - 🇺🇸-822
+  - 🇺🇸-826
   - 🇯🇵JP_4
   - 🇺🇸US_506
-  - US美国-819
-  - 🇭🇰-821
+  - 🇭🇰-832
   - 🇸🇬SG_91
   - 🇺🇸US_316
   - 🇺🇸US_582
   - 🇫🇷FR_138
-  - US美国-843
-  - JP日本-848
+  - 🇸🇬SG_62
+  - US美国-855
+  - JP日本-860
   - 🇺🇸US_54
   - 🇺🇸US_345
-  - US美国-854
-  - 🇯🇵-864
-  - US美国-868
+  - US美国-866
+  - 🇺🇸US_365
+  - 🇯🇵-876
+  - US美国-881
   - 🇺🇸US_363
   - 🇺🇸US_372
   - 🇺🇸US_403
-  - US美国-881
-  - SG新加坡-889
-  - 🇺🇸-894
+  - US美国-894
+  - SG新加坡-901
+  - 🇺🇸-906
   - 🇺🇸US_507
   - US VLESS-67
   - 🇺🇸US_479
-  - US美国-900
-  - US美国-902
-  - 🇸🇬-905
-  - 美国(shop.tgaaaa.co-906
-  - HK香港-907
+  - US美国-912
+  - US美国-914
+  - 🇸🇬-918
+  - 美国(shop.tgaaaa.co-919
+  - HK香港-920
   - 🇺🇸US_577
   - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  - 🇯🇵-911
+  - 🇯🇵-924
   - 🇸🇬SG_19
   - 🇺🇸US_554
-  - US美国-917
+  - US美国-930
   - 🇸🇬SG_93
+  - US美国-939
   - 🇺🇸US_501
-  - JP日本-932
+  - JP日本-945
   - 🇸🇬SG_17
-  - 🇯🇵-938
-  - 🇸🇬-942
+  - 🇺🇸US_569
+  - 🇯🇵-952
+  - 🇸🇬-956
+  - JP日本-958
   - 🇯🇵JP_41
   - 🇺🇸US_153
-  - US美国-955
-  - 🇺🇸-956
-  - 🇺🇸-958
+  - US美国-969
+  - 🇺🇸-970
+  - 🇺🇸-972
   - US VLESS-64
+  - US美国-979
   - 🇺🇸US_59
-  - 🇭🇰-969
-  - 🇯🇵-971
-  - 🇺🇸-973
+  - 🇭🇰-984
+  - 🇯🇵-986
+  - 🇺🇸-988
   - 日本(shop.tgaaaa.co
   - 🇸🇬SG_88
   - 🇺🇸US_283
-  - US美国-984
+  - US美国-998
   - 🇺🇸US_553
   - 🇺🇸US_44
   - 🇺🇸US_389
-  - US美国-990
   - 🇯🇵JP_29
   - 🇯🇵JP_9
-  - US美国-998
-  - US美国-999
-  - 🇺🇸_US_美国-1001
+  - US美国-1011
+  - US美国-1012
+  - 🇺🇸_US_美国-1014
   - 🇺🇸US_521
-  - 🇺🇸-1009
+  - 🇺🇸-1022
   - 🇺🇸US_338
   - 🇺🇸US_371
   - 🇺🇸US_390
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
   - 🇯🇵JP_19
-  - US美国-1026
-  - 🇸🇬SG_69
-  - US美国-1038
+  - US美国-1039
   - US美国-1043
+  - 🇸🇬SG_69
+  - US美国-1051
+  - US美国-1055
+  - US美国-1057
   - 🇸🇬SG_90
-  - 🇺🇸_US_美国-1054
-  - 🇯🇵-1060
+  - 🇺🇸_US_美国-1068
+  - 🇯🇵-1074
   - 🇺🇸US_281
-  - US美国-1065
+  - US美国-1079
   - 🇺🇸US_64
-  - US美国-1067
+  - US美国-1081
   - 🇯🇵JP_5
   - 🇸🇬SG_31
   - 🇺🇸US_494
   - 🇺🇸US_469
   - 🇺🇸US_110
   - 🇺🇸US_236
-  - US美国-1096
+  - US美国-1109
   - 🇺🇸US_467
   - TW台湾
-  - US美国-1121
+  - US美国-1134
   - 🇹🇼TW_33
-  - 🇸🇬-1126
+  - 🇸🇬-1139
   - 🇺🇸US_38
-  - 🇭🇰-1135
+  - 🇭🇰-1148
   - 🇺🇸US_178
-  - 🇺🇸-1137
+  - 🇺🇸-1150
   - 🇸🇬SG_85
   - 🇺🇸US_545
-  - 🇭🇰-1155
+  - 🇭🇰-1169
   - 🇯🇵_JP_日本
   - 🇺🇸US_17
   - US VLESS-28
   - 🇺🇸US_580
-  - US美国-1186
-  - 🇺🇸_US_美国-1187
+  - 🇺🇸_US_美国-1201
   - 🇺🇸US_527
   - 🇹🇼TW_11
   - US VLESS-68
@@ -11106,156 +11616,174 @@ proxy-groups:
   - 🇹🇼TW_5
   - 🇺🇸US_394
   - US VLESS-76
-  - 🇺🇸-1215
-  - US美国-1218
+  - 🇺🇸-1228
+  - 🇭🇰HK_67
+  - US美国-1232
   - 🇸🇬SG_10
-  - 🇺🇸-1223
-  - 🇺🇸-1229
+  - 🇺🇸-1237
+  - 🇺🇸-1243
   - 🇺🇸US_271
-  - 🇯🇵-1242
-  - 🇺🇸-1247
+  - 🇯🇵-1256
+  - 🇺🇸-1261
   - 🇺🇸US_279
   - 🇺🇸US_369
-  - US美国-1261
-  - JP日本-1262
-  - 🇺🇸US_555
-  - US VLESS-50
-  - 🇯🇵-1271
-  - 🇹🇼TW_34
-  - US美国-1274
-  - 🇭🇰-1275
   - US美国-1276
+  - JP日本-1277
+  - 🇺🇸US_555
+  - 🇸🇬SG_80
+  - US VLESS-50
+  - 🇯🇵-1287
+  - 🇹🇼TW_34
+  - US美国-1290
+  - 🇭🇰-1291
+  - US美国-1292
   - HK VLESS-20
-  - JP日本-1279
-  - 🇸🇬-1283
+  - JP日本-1295
+  - 🇸🇬-1299
   - 🇺🇸US_56
   - 🇸🇬SG_65
   - 🇺🇸US_10
   - HK VLESS-51
-  - 🇭🇰-1312
+  - 🇱🇰
+  - 🇭🇰-1329
   - 🇯🇵JP_12
   - 🇸🇬SG_86
   - 🇺🇸US_125
   - 🇺🇸US_333
-  - SG新加坡-1329
+  - SG新加坡-1346
   - 🇸🇬SG_75
   - 🇭🇰HK_82
   - 🇺🇸US_567
   - 🇯🇵JP_6
   - 🇺🇸US_100
-  - US美国-1338
-  - SG新加坡-1340
-  - US美国-1347
+  - US美国-1356
+  - SG新加坡-1358
+  - US美国-1365
   - 🇺🇸US_39
   - 🇸🇬SG_71
   - US VLESS-10
   - 🇸🇬SG_7
-  - 🇺🇸-1362
-  - 🇺🇸-1364
-  - 🇺🇸-1365
+  - 🇺🇸-1379
+  - 🇺🇸-1381
+  - 🇺🇸-1382
   - 🇺🇸US_489
   - US VLESS-31
   - 🇺🇸US_309
   - 🇺🇸US_217
   - 🇺🇸US_583
-  - 🇺🇸美国-1391
-  - 🇭🇰-1394
-  - 🇸🇬-1396
+  - 🇺🇸美国-1410
+  - 🇭🇰-1413
+  - 🇸🇬-1416
+  - 🇯🇵JP-172.111.146.64-5659
+  - 🇺🇸US-198.98.53.130-5739
+  - 🇺🇸US-79.133.109.56-5056
+  - 🇯🇵JP-168.138.43.75-0160
+  - 🇭🇰HK-167.179.32.53-0055
+  - 🇭🇰HK-219.76.13.175-0053
+  - 🇭🇰HK-23.100.91.61-0051
+  - 🇭🇰HK-23.100.91.146-0049
+  - 🇭🇰HK-23.100.91.117-0047
+  - 🇭🇰HK-219.76.13.175-0044
+  - 🇭🇰HK-219.76.13.180-0042
+  - 🇭🇰HK-219.76.13.181-0041
+  - 🇯🇵JP-20.46.182.185-0038
+  - 🇭🇰HK-219.76.13.181-0037
+  - 🇸🇬SG-188.166.186.249-0036
   - 🇸🇬 SG新加坡
   - 🇺🇸 US美國
   - 🇭🇰HK香港丨
-  - 🇭🇰HK香港丨-1416
-  - US美国(mibei77.com 米贝节点分享)-1418
-  - US美国(mibei77.com 米贝节点分享)-1419
-  - US美国(mibei77.com 米贝节点分享)-1420
-  - US美国(mibei77.com 米贝节点分享)-1421
-  - US美国(mibei77.com 米贝节点分享)-1422
-  - US美国(mibei77.com 米贝节点分享)-1423
-  - US美国(mibei77.com 米贝节点分享)-1424
-  - US美国(mibei77.com 米贝节点分享)-1425
-  - US美国(mibei77.com 米贝节点分享)-1426
-  - US美国(mibei77.com 米贝节点分享)-1427
-  - US美国(mibei77.com 米贝节点分享)-1428
-  - US美国(mibei77.com 米贝节点分享)-1429
-  - US美国(mibei77.com 米贝节点分享)-1430
-  - US美国(mibei77.com 米贝节点分享)-1431
-  - US美国(mibei77.com 米贝节点分享)-1432
-  - US美国(mibei77.com 米贝节点分享)-1433
-  - US美国(mibei77.com 米贝节点分享)-1434
-  - US美国(mibei77.com 米贝节点分享)-1435
-  - US美国(mibei77.com 米贝节点分享)-1436
-  - US美国(mibei77.com 米贝节点分享)-1437
-  - US美国(mibei77.com 米贝节点分享)-1438
-  - US美国(mibei77.com 米贝节点分享)-1439
-  - US美国(mibei77.com 米贝节点分享)-1440
-  - US美国(mibei77.com 米贝节点分享)-1441
-  - US美国(mibei77.com 米贝节点分享)-1442
-  - US美国(mibei77.com 米贝节点分享)-1443
-  - US美国(mibei77.com 米贝节点分享)-1444
-  - US美国(mibei77.com 米贝节点分享)-1445
-  - US美国(mibei77.com 米贝节点分享)-1446
-  - US美国(mibei77.com 米贝节点分享)-1447
-  - US美国(mibei77.com 米贝节点分享)-1448
-  - US美国(mibei77.com 米贝节点分享)-1449
-  - US美国(mibei77.com 米贝节点分享)-1450
-  - US美国(mibei77.com 米贝节点分享)-1451
-  - US美国(mibei77.com 米贝节点分享)-1452
-  - US美国(mibei77.com 米贝节点分享)-1453
-  - US美国(mibei77.com 米贝节点分享)-1454
-  - US美国(mibei77.com 米贝节点分享)-1455
-  - US美国(mibei77.com 米贝节点分享)-1456
-  - US美国(mibei77.com 米贝节点分享)-1457
-  - US美国(mibei77.com 米贝节点分享)-1458
-  - US美国(mibei77.com 米贝节点分享)-1459
-  - US美国(mibei77.com 米贝节点分享)-1460
-  - US美国(mibei77.com 米贝节点分享)-1461
-  - US美国(mibei77.com 米贝节点分享)-1462
-  - US美国(mibei77.com 米贝节点分享)-1463
-  - US美国(mibei77.com 米贝节点分享)-1464
-  - US美国(mibei77.com 米贝节点分享)-1465
-  - US美国(mibei77.com 米贝节点分享)-1466
-  - US美国(mibei77.com 米贝节点分享)-1467
-  - US美国(mibei77.com 米贝节点分享)-1468
-  - US美国(mibei77.com 米贝节点分享)-1469
-  - US美国(mibei77.com 米贝节点分享)-1470
-  - US美国(mibei77.com 米贝节点分享)-1471
-  - US美国(mibei77.com 米贝节点分享)-1472
-  - US美国(mibei77.com 米贝节点分享)-1473
-  - US美国(mibei77.com 米贝节点分享)-1474
-  - US美国(mibei77.com 米贝节点分享)-1475
-  - US美国(mibei77.com 米贝节点分享)-1476
-  - US美国(mibei77.com 米贝节点分享)-1477
-  - US美国(mibei77.com 米贝节点分享)-1478
-  - US美国(mibei77.com 米贝节点分享)-1479
+  - 🇭🇰HK香港丨-1480
+  - US美国(mibei77.com 米贝节点分享)-1482
+  - US美国(mibei77.com 米贝节点分享)-1483
+  - US美国(mibei77.com 米贝节点分享)-1484
+  - US美国(mibei77.com 米贝节点分享)-1485
+  - US美国(mibei77.com 米贝节点分享)-1486
+  - US美国(mibei77.com 米贝节点分享)-1487
+  - US美国(mibei77.com 米贝节点分享)-1488
+  - US美国(mibei77.com 米贝节点分享)-1489
+  - US美国(mibei77.com 米贝节点分享)-1490
+  - US美国(mibei77.com 米贝节点分享)-1491
+  - US美国(mibei77.com 米贝节点分享)-1492
+  - US美国(mibei77.com 米贝节点分享)-1493
+  - US美国(mibei77.com 米贝节点分享)-1494
+  - US美国(mibei77.com 米贝节点分享)-1495
+  - US美国(mibei77.com 米贝节点分享)-1496
+  - US美国(mibei77.com 米贝节点分享)-1497
+  - US美国(mibei77.com 米贝节点分享)-1498
+  - US美国(mibei77.com 米贝节点分享)-1499
+  - US美国(mibei77.com 米贝节点分享)-1500
+  - US美国(mibei77.com 米贝节点分享)-1501
+  - US美国(mibei77.com 米贝节点分享)-1502
+  - US美国(mibei77.com 米贝节点分享)-1503
+  - US美国(mibei77.com 米贝节点分享)-1504
+  - US美国(mibei77.com 米贝节点分享)-1505
+  - US美国(mibei77.com 米贝节点分享)-1506
+  - US美国(mibei77.com 米贝节点分享)-1507
+  - US美国(mibei77.com 米贝节点分享)-1508
+  - US美国(mibei77.com 米贝节点分享)-1509
+  - US美国(mibei77.com 米贝节点分享)-1510
+  - US美国(mibei77.com 米贝节点分享)-1511
+  - US美国(mibei77.com 米贝节点分享)-1512
+  - US美国(mibei77.com 米贝节点分享)-1513
+  - US美国(mibei77.com 米贝节点分享)-1514
+  - US美国(mibei77.com 米贝节点分享)-1515
+  - US美国(mibei77.com 米贝节点分享)-1516
+  - US美国(mibei77.com 米贝节点分享)-1517
+  - US美国(mibei77.com 米贝节点分享)-1518
+  - US美国(mibei77.com 米贝节点分享)-1519
+  - US美国(mibei77.com 米贝节点分享)-1520
+  - US美国(mibei77.com 米贝节点分享)-1521
+  - US美国(mibei77.com 米贝节点分享)-1522
+  - US美国(mibei77.com 米贝节点分享)-1523
+  - US美国(mibei77.com 米贝节点分享)-1524
+  - US美国(mibei77.com 米贝节点分享)-1525
+  - US美国(mibei77.com 米贝节点分享)-1526
+  - US美国(mibei77.com 米贝节点分享)-1527
+  - US美国(mibei77.com 米贝节点分享)-1528
+  - US美国(mibei77.com 米贝节点分享)-1529
+  - US美国(mibei77.com 米贝节点分享)-1530
+  - US美国(mibei77.com 米贝节点分享)-1531
+  - US美国(mibei77.com 米贝节点分享)-1532
+  - US美国(mibei77.com 米贝节点分享)-1533
+  - US美国(mibei77.com 米贝节点分享)-1534
+  - US美国(mibei77.com 米贝节点分享)-1535
+  - US美国(mibei77.com 米贝节点分享)-1536
+  - US美国(mibei77.com 米贝节点分享)-1537
+  - US美国(mibei77.com 米贝节点分享)-1538
+  - US美国(mibei77.com 米贝节点分享)-1539
+  - US美国(mibei77.com 米贝节点分享)-1540
+  - US美国(mibei77.com 米贝节点分享)-1541
+  - US美国(mibei77.com 米贝节点分享)-1542
+  - US美国(mibei77.com 米贝节点分享)-1543
   - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)-1482
-  - TW台湾(mibei77.com 米贝节点分享)-1483
-  - TW台湾(mibei77.com 米贝节点分享)-1484
-  - SG新加坡(mibei77.com 米贝节点分享)-1485
-  - SG新加坡(mibei77.com 米贝节点分享)-1486
-  - SG新加坡(mibei77.com 米贝节点分享)-1487
-  - JP日本(mibei77.com 米贝节点分享)-1492
-  - JP日本(mibei77.com 米贝节点分享)-1493
-  - JP日本(mibei77.com 米贝节点分享)-1494
-  - JP日本(mibei77.com 米贝节点分享)-1495
-  - JP日本(mibei77.com 米贝节点分享)-1496
-  - JP日本(mibei77.com 米贝节点分享)-1497
-  - JP日本(mibei77.com 米贝节点分享)-1498
-  - JP日本(mibei77.com 米贝节点分享)-1499
-  - JP日本(mibei77.com 米贝节点分享)-1500
-  - HK香港(mibei77.com 米贝节点分享)-1506
-  - HK香港(mibei77.com 米贝节点分享)-1507
-  - HK香港(mibei77.com 米贝节点分享)-1508
-  - HK香港(mibei77.com 米贝节点分享)-1509
-  - HK香港(mibei77.com 米贝节点分享)-1510
-  - HK香港(mibei77.com 米贝节点分享)-1511
-  - HK香港(mibei77.com 米贝节点分享)-1512
-  - HK香港(mibei77.com 米贝节点分享)-1513
-  - HK香港(mibei77.com 米贝节点分享)-1514
-  - HK香港(mibei77.com 米贝节点分享)-1515
-  - HK香港(mibei77.com 米贝节点分享)-1516
-  - HK香港(mibei77.com 米贝节点分享)-1517
-  - HK香港(mibei77.com 米贝节点分享)-1518
+  - TW台湾(mibei77.com 米贝节点分享)-1546
+  - TW台湾(mibei77.com 米贝节点分享)-1547
+  - TW台湾(mibei77.com 米贝节点分享)-1548
+  - SG新加坡(mibei77.com 米贝节点分享)-1549
+  - SG新加坡(mibei77.com 米贝节点分享)-1550
+  - SG新加坡(mibei77.com 米贝节点分享)-1551
+  - JP日本(mibei77.com 米贝节点分享)-1556
+  - JP日本(mibei77.com 米贝节点分享)-1557
+  - JP日本(mibei77.com 米贝节点分享)-1558
+  - JP日本(mibei77.com 米贝节点分享)-1559
+  - JP日本(mibei77.com 米贝节点分享)-1560
+  - JP日本(mibei77.com 米贝节点分享)-1561
+  - JP日本(mibei77.com 米贝节点分享)-1562
+  - JP日本(mibei77.com 米贝节点分享)-1563
+  - JP日本(mibei77.com 米贝节点分享)-1564
+  - HK香港(mibei77.com 米贝节点分享)-1570
+  - HK香港(mibei77.com 米贝节点分享)-1571
+  - HK香港(mibei77.com 米贝节点分享)-1572
+  - HK香港(mibei77.com 米贝节点分享)-1573
+  - HK香港(mibei77.com 米贝节点分享)-1574
+  - HK香港(mibei77.com 米贝节点分享)-1575
+  - HK香港(mibei77.com 米贝节点分享)-1576
+  - HK香港(mibei77.com 米贝节点分享)-1577
+  - HK香港(mibei77.com 米贝节点分享)-1578
+  - HK香港(mibei77.com 米贝节点分享)-1579
+  - HK香港(mibei77.com 米贝节点分享)-1580
+  - HK香港(mibei77.com 米贝节点分享)-1581
+  - HK香港(mibei77.com 米贝节点分享)-1582
   - 香港 09
   - 香港 14
   - 香港 15
@@ -11522,9 +12050,9 @@ proxy-groups:
   - 🇺🇸US_859|265KB/s|B007-260618 01
   - 🇺🇸US_860|364KB/s|P001-260618 01
   - 🇺🇸US_861|453KB/s|R002-260618 01
-  - 🇺🇸_US_美国-3379
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港-3397
+  - 🇺🇸_US_美国-3443
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡-3451
+  - 🇭🇰_HK_中国香港-3461
   - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 未知 SS-305 | free-nodes
   - 未知 SS-452 | free-nodes
@@ -11541,7 +12069,6 @@ proxy-groups:
   - 未知 VMESS-1265 | free-nodes
   - 未知 VMESS-1266 | free-nodes
   - 未知 VMESS-1267 | free-nodes
-  - 未知 VMESS-1269 | free-nodes
   - 未知 VMESS-1271 | free-nodes
   - 未知 VMESS-1272 | free-nodes
   - 未知 VMESS-1273 | free-nodes
@@ -11571,389 +12098,418 @@ proxy-groups:
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - JP日本(mibei77.com 米贝节点分享)
-  - SG新加坡(mibei77.com 米贝节点分享)
   - US美国(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)-2
+  - US美国(mibei77.com 米贝节点分享)-3
+  - US美国(mibei77.com 米贝节点分享)-4
   - US美国(mibei77.com 米贝节点分享)-5
   - US美国(mibei77.com 米贝节点分享)-6
-  - JP日本(mibei77.com 米贝节点分享)-7
+  - US美国(mibei77.com 米贝节点分享)-7
   - US美国(mibei77.com 米贝节点分享)-8
   - US美国(mibei77.com 米贝节点分享)-9
   - US美国(mibei77.com 米贝节点分享)-10
+  - US美国(mibei77.com 米贝节点分享)-11
+  - US美国(mibei77.com 米贝节点分享)-12
+  - US美国(mibei77.com 米贝节点分享)-13
   - US美国(mibei77.com 米贝节点分享)-14
-  - SG新加坡(mibei77.com 米贝节点分享)-19
+  - US美国(mibei77.com 米贝节点分享)-15
+  - US美国(mibei77.com 米贝节点分享)-16
+  - US美国(mibei77.com 米贝节点分享)-17
+  - US美国(mibei77.com 米贝节点分享)-18
+  - US美国(mibei77.com 米贝节点分享)-19
+  - US美国(mibei77.com 米贝节点分享)-20
+  - US美国(mibei77.com 米贝节点分享)-21
   - US美国(mibei77.com 米贝节点分享)-22
+  - US美国(mibei77.com 米贝节点分享)-23
+  - US美国(mibei77.com 米贝节点分享)-24
+  - US美国(mibei77.com 米贝节点分享)-25
   - US美国(mibei77.com 米贝节点分享)-26
+  - US美国(mibei77.com 米贝节点分享)-27
+  - US美国(mibei77.com 米贝节点分享)-28
   - US美国(mibei77.com 米贝节点分享)-29
+  - US美国(mibei77.com 米贝节点分享)-30
+  - US美国(mibei77.com 米贝节点分享)-31
   - US美国(mibei77.com 米贝节点分享)-32
+  - US美国(mibei77.com 米贝节点分享)-33
   - US美国(mibei77.com 米贝节点分享)-34
   - US美国(mibei77.com 米贝节点分享)-35
+  - US美国(mibei77.com 米贝节点分享)-36
+  - US美国(mibei77.com 米贝节点分享)-37
   - US美国(mibei77.com 米贝节点分享)-38
-  - SG新加坡(mibei77.com 米贝节点分享)-43
+  - US美国(mibei77.com 米贝节点分享)-39
+  - US美国(mibei77.com 米贝节点分享)-40
+  - US美国(mibei77.com 米贝节点分享)-41
+  - US美国(mibei77.com 米贝节点分享)-42
+  - US美国(mibei77.com 米贝节点分享)-43
   - US美国(mibei77.com 米贝节点分享)-44
   - US美国(mibei77.com 米贝节点分享)-45
+  - US美国(mibei77.com 米贝节点分享)-46
+  - US美国(mibei77.com 米贝节点分享)-47
   - US美国(mibei77.com 米贝节点分享)-48
+  - US美国(mibei77.com 米贝节点分享)-49
   - US美国(mibei77.com 米贝节点分享)-50
+  - US美国(mibei77.com 米贝节点分享)-51
+  - US美国(mibei77.com 米贝节点分享)-52
+  - US美国(mibei77.com 米贝节点分享)-53
+  - US美国(mibei77.com 米贝节点分享)-54
+  - US美国(mibei77.com 米贝节点分享)-55
   - US美国(mibei77.com 米贝节点分享)-56
-  - HK香港(mibei77.com 米贝节点分享)
+  - US美国(mibei77.com 米贝节点分享)-57
+  - US美国(mibei77.com 米贝节点分享)-58
+  - US美国(mibei77.com 米贝节点分享)-59
   - US美国(mibei77.com 米贝节点分享)-60
   - US美国(mibei77.com 米贝节点分享)-61
   - US美国(mibei77.com 米贝节点分享)-62
-  - HK香港(mibei77.com 米贝节点分享)-64
+  - US美国(mibei77.com 米贝节点分享)-63
+  - US美国(mibei77.com 米贝节点分享)-64
   - US美国(mibei77.com 米贝节点分享)-65
-  - SG新加坡(mibei77.com 米贝节点分享)-66
+  - US美国(mibei77.com 米贝节点分享)-66
   - US美国(mibei77.com 米贝节点分享)-67
   - US美国(mibei77.com 米贝节点分享)-68
-  - SG新加坡(mibei77.com 米贝节点分享)-69
+  - US美国(mibei77.com 米贝节点分享)-69
   - US美国(mibei77.com 米贝节点分享)-70
-  - SG新加坡(mibei77.com 米贝节点分享)-72
-  - HK香港(mibei77.com 米贝节点分享)-73
+  - US美国(mibei77.com 米贝节点分享)-71
+  - US美国(mibei77.com 米贝节点分享)-72
+  - US美国(mibei77.com 米贝节点分享)-73
   - US美国(mibei77.com 米贝节点分享)-74
-  - SG新加坡(mibei77.com 米贝节点分享)-77
+  - US美国(mibei77.com 米贝节点分享)-75
+  - US美国(mibei77.com 米贝节点分享)-76
+  - US美国(mibei77.com 米贝节点分享)-77
   - US美国(mibei77.com 米贝节点分享)-78
-  - US美国(mibei77.com 米贝节点分享)-79
-  - US美国(mibei77.com 米贝节点分享)-80
-  - HK香港(mibei77.com 米贝节点分享)-81
-  - HK香港(mibei77.com 米贝节点分享)-82
-  - US美国(mibei77.com 米贝节点分享)-83
-  - HK香港(mibei77.com 米贝节点分享)-84
-  - US美国(mibei77.com 米贝节点分享)-88
-  - US美国(mibei77.com 米贝节点分享)-89
-  - US美国(mibei77.com 米贝节点分享)-92
-  - US美国(mibei77.com 米贝节点分享)-93
+  - SG新加坡(mibei77.com 米贝节点分享)
+  - JP日本(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)
+  - HK香港(mibei77.com 米贝节点分享)-85
+  - HK香港(mibei77.com 米贝节点分享)-86
+  - HK香港(mibei77.com 米贝节点分享)-87
+  - HK香港(mibei77.com 米贝节点分享)-88
+  - HK香港(mibei77.com 米贝节点分享)-89
+  - HK香港(mibei77.com 米贝节点分享)-90
+  - HK香港(mibei77.com 米贝节点分享)-91
+  - HK香港(mibei77.com 米贝节点分享)-92
+  - HK香港(mibei77.com 米贝节点分享)-93
   - HK香港(mibei77.com 米贝节点分享)-94
-  - US美国(mibei77.com 米贝节点分享)-95
-  - US美国(mibei77.com 米贝节点分享)-96
-  - US美国(mibei77.com 米贝节点分享)-97
-  - US美国(mibei77.com 米贝节点分享)-98
-  - US美国(mibei77.com 米贝节点分享)-102
-  - US美国(mibei77.com 米贝节点分享)-106
-  - US美国(mibei77.com 米贝节点分享)-108
-  - HK香港(mibei77.com 米贝节点分享)-109
-  - US美国(mibei77.com 米贝节点分享)-110
-  - US美国(mibei77.com 米贝节点分享)-111
-  - US美国(mibei77.com 米贝节点分享)-113
-  - US美国(mibei77.com 米贝节点分享)-114
-  - US美国(mibei77.com 米贝节点分享)-115
-  - US美国(mibei77.com 米贝节点分享)-116
-  - US美国(mibei77.com 米贝节点分享)-117
-  - US美国(mibei77.com 米贝节点分享)-118
-  - US美国(mibei77.com 米贝节点分享)-119
-  - HK香港(mibei77.com 米贝节点分享)-121
-  - US美国(mibei77.com 米贝节点分享)-122
-  - US美国(mibei77.com 米贝节点分享)-123
-  - US美国(mibei77.com 米贝节点分享)-124
-  - US美国(mibei77.com 米贝节点分享)-125
-  - US美国(mibei77.com 米贝节点分享)-127
+  - HK香港(mibei77.com 米贝节点分享)-95
+  - HK香港(mibei77.com 米贝节点分享)-96
+  - HK香港(mibei77.com 米贝节点分享)-97
+  - HK香港(mibei77.com 米贝节点分享)-98
+  - HK香港(mibei77.com 米贝节点分享)-99
+  - HK香港(mibei77.com 米贝节点分享)-100
+  - SG新加坡(mibei77.com 米贝节点分享)-107
+  - SG新加坡(mibei77.com 米贝节点分享)-108
+  - SG新加坡(mibei77.com 米贝节点分享)-109
+  - SG新加坡(mibei77.com 米贝节点分享)-110
+  - SG新加坡(mibei77.com 米贝节点分享)-111
+  - JP日本(mibei77.com 米贝节点分享)-129
   - JP日本(mibei77.com 米贝节点分享)-130
-  - SG新加坡(mibei77.com 米贝节点分享)-135
-  - JP日本(mibei77.com 米贝节点分享)-136
-  - JP日本(mibei77.com 米贝节点分享)-137
-  - JP日本(mibei77.com 米贝节点分享)-138
-  - JP日本(mibei77.com 米贝节点分享)-139
-  - US美国(mibei77.com 米贝节点分享)-141
-  - US美国(mibei77.com 米贝节点分享)-142
-  - US美国(mibei77.com 米贝节点分享)-143
-  - HK香港(mibei77.com 米贝节点分享)-144
   - 🇺🇸
   - 🇺🇸US_368
   - US美国
-  - US美国-166
   - US美国-169
   - US美国-172
+  - US美国-175
+  - 美国(shop.tgaaaa.co
   - 🇯🇵JP_35
   - 🇯🇵
   - 🇺🇸US_67
-  - 🇺🇸-186
+  - 🇺🇸-191
   - 🇺🇸US_439
   - 🇺🇸US_438
   - 🇺🇸US_562
-  - 美国(shop.tgaaaa.co
+  - 美国(shop.tgaaaa.co-200
   - 🇸🇬
   - 🇺🇸US_317
   - 🇺🇸US_497
+  - US美国-210
   - 🇺🇸US_127
   - 🇺🇸US_504
-  - US美国-216
+  - US美国-220
   - 🇭🇰HK_25
   - JP日本
-  - US美国-225
+  - US美国-228
   - 🇹🇼TW_6
   - 🇺🇸US_563
   - US VLESS-62
-  - US美国-240
-  - 🇺🇸-245
+  - US美国-243
+  - 🇺🇸-248
   - 🇺🇸US_24
   - 🇹🇭TH_7
-  - US美国-251
+  - US美国-254
   - CA加拿大
+  - SG新加坡
   - 🇺🇸US_427
   - 🇺🇸US_219
-  - US美国-261
+  - US美国-265
   - 🇺🇸US_367
   - 🇭🇰
   - 🇺🇸US_399
   - 🇺🇸US_136
-  - JP日本-268
+  - JP日本-272
   - 🗽🇺🇸
   - 🇸🇬SG_97
   - 🇺🇸US_36
-  - 美国(shop.tgaaaa.co-294
-  - JP日本-296
-  - 🇺🇸-304
-  - 🇺🇸-305
+  - 美国(shop.tgaaaa.co-297
+  - JP日本-301
   - 🇺🇸-309
-  - US美国-312
+  - 🇺🇸-310
+  - 🇺🇸-314
   - 🇯🇵JP_25
   - 🇺🇸US_448
-  - 美国(shop.tgaaaa.co-319
-  - 🇭🇰-331
+  - 美国(shop.tgaaaa.co-323
+  - 🇭🇰-335
   - 🇺🇸US_561
-  - 🇺🇸-340
+  - 🇺🇸-344
   - 🇺🇸US_424
   - 🇯🇵JP_31
-  - 🇭🇰-345
+  - 🇭🇰-349
   - 🇯🇵JP_37
   - 🇺🇸US_167
   - 🇸🇬SG_39
   - 🇸🇬SG_77
   - HK VLESS-44
-  - US美国-365
+  - US美国-369
   - 🇺🇸US_337
   - 🇺🇸US_458
-  - US美国-370
-  - 美国(shop.tgaaaa.co-371
-  - US美国-372
+  - 美国(shop.tgaaaa.co-374
+  - US美国-375
   - 🇺🇸_US_美国
-  - 🇭🇰-378
-  - US美国-381
-  - US美国-386
+  - 🇭🇰-381
+  - US美国-384
+  - US美国-389
   - 🇺🇸US_411
-  - US美国-395
   - US美国-398
+  - US美国-401
   - 🇸🇬SG_83
   - 🇺🇸US_14
   - US VLESS-72
   - 🇺🇸US_318
   - 🇺🇸US_285
-  - US美国-428
+  - SG新加坡-427
+  - US美国-430
   - 🇺🇸US_509
-  - US美国-435
-  - JP日本-438
-  - US美国-441
+  - US美国-437
+  - JP日本-440
+  - US美国-443
   - 🇸🇬SG_95
-  - US美国-449
+  - US美国-451
   - US VLESS-83
-  - 🇭🇰-455
-  - US美国-459
+  - 🇭🇰-457
+  - 🇺🇸US_492
+  - US美国-462
   - HK VLESS-12
   - 🇯🇵JP_30
-  - 美国(shop.tgaaaa.co-479
-  - 🇺🇸-482
+  - 美国(shop.tgaaaa.co-482
+  - US美国-483
+  - 🇺🇸-485
   - 🇺🇸美国
   - 🇭🇰_HK_中国香港
-  - 🇺🇸-501
+  - 🇺🇸-504
   - 🇺🇸US_238
   - 美国_789145
   - 🇺🇸US_247
   - 🇺🇸US_505
-  - US美国-525
+  - US美国-530
   - 🇺🇸US_189
   - US VLESS-74
-  - 🇺🇸-537
+  - 🇺🇸-542
   - 🇺🇸US_425
-  - US美国-547
+  - US美国-552
   - US VLESS-34
   - US VLESS-13
-  - 🇭🇰-554
+  - 🇭🇰-560
   - 🇺🇸US_349
-  - 🇸🇬-559
-  - JP日本-560
-  - 🇭🇰-565
+  - 🇸🇬-565
+  - JP日本-566
+  - 🇭🇰-571
   - 🇺🇸US_233
-  - 🇺🇸-571
+  - 🇺🇸-577
   - 🇺🇸US_420
   - HK香港
   - 🇹🇼
   - 🇺🇸US_550
-  - 🇭🇰-589
-  - 美国(shop.tgaaaa.co-595
+  - 🇭🇰-595
   - US VLESS-78
   - 🇭🇰HK_66
-  - 🇭🇰-605
+  - 🇭🇰-610
   - 🇭🇰HK_74
   - 🇺🇸US_451
   - 🇸🇬SG_92
-  - 美国(shop.tgaaaa.co-617
+  - 美国(shop.tgaaaa.co-622
   - 🇺🇸US_264
   - 🇺🇸US_137
-  - 🇺🇸-625
+  - 🇺🇸-630
+  - 🇺🇸US_538
   - 🇺🇸US_445
   - 🇸🇬SG_56
-  - 美国(shop.tgaaaa.co-636
-  - US美国-637
-  - 🇺🇸-638
+  - 美国(shop.tgaaaa.co-644
+  - US美国-645
+  - 🇺🇸-646
   - 🇸🇬SG_78
   - 🇺🇸US_58
   - 🇺🇸US_542
   - US VLESS-22
   - 🇺🇸US_397
-  - 🇭🇰-660
+  - 🇭🇰-669
   - 🇺🇸US_342
   - 🇺🇸US_302
-  - 美国(shop.tgaaaa.co-665
+  - 美国(shop.tgaaaa.co-674
   - 🇸🇬SG_87
-  - CA加拿大-672
+  - CA加拿大-681
   - 🇺🇸US_74
   - 🇺🇸US_339
-  - 美国(shop.tgaaaa.co-677
-  - 🇸🇬-679
-  - SG新加坡
+  - 美国(shop.tgaaaa.co-686
+  - 🇸🇬-688
+  - SG新加坡-689
   - 🇭🇰HK_63
   - 🇸🇬SG_46
   - 🇸🇬SG_89
   - 🇺🇸US_576
   - 🇺🇸US_344
-  - 🇭🇰-699
-  - 🇺🇸US_90
   - 🇭🇰-709
+  - 🇺🇸US_90
+  - 🇭🇰-721
   - 🇺🇸US_457
   - 🇯🇵JP_2
   - 🇺🇸US_500
-  - 🇯🇵-728
+  - 🇯🇵-740
   - US VLESS-19
-  - 🇸🇬-732
-  - 🇭🇰-738
-  - 🇺🇸-740
-  - 🇯🇵-741
+  - 🇸🇬-744
+  - 🇭🇰-750
+  - 🇺🇸-752
+  - 🇯🇵-753
   - 🇺🇸US_476
   - 🇺🇸US_289
   - 🇭🇰HK_1
   - 🇺🇸US_526
-  - 🇺🇸-766
+  - 🇺🇸-776
   - 🇺🇸US_266
   - 🇺🇸US_532
   - 🇯🇵JP_34
-  - US美国-770
-  - 🇯🇵-774
+  - US美国-780
+  - 🇯🇵-784
   - US VLESS-23
-  - US美国-778
+  - US美国-788
   - 🇭🇰HK_8
-  - US美国-790
+  - US美国-801
   - 🇺🇸US_572
-  - 🇺🇸_US_美国-795
+  - 🇺🇸_US_美国-807
   - 🇸🇬SG_79
-  - 🇺🇸-799
-  - 美国(shop.tgaaaa.co-801
-  - JP日本-809
-  - 🇺🇸-810
-  - 🇺🇸-814
+  - 🇺🇸-811
+  - 美国(shop.tgaaaa.co-813
+  - 🇺🇸-822
+  - 🇺🇸-826
   - 🇯🇵JP_4
   - 🇺🇸US_506
-  - US美国-819
-  - 🇭🇰-821
+  - 🇭🇰-832
   - 🇸🇬SG_91
   - 🇺🇸US_316
   - 🇺🇸US_582
   - 🇫🇷FR_138
-  - US美国-843
-  - JP日本-848
+  - 🇸🇬SG_62
+  - US美国-855
+  - JP日本-860
   - 🇺🇸US_54
   - 🇺🇸US_345
-  - US美国-854
-  - 🇯🇵-864
-  - US美国-868
+  - US美国-866
+  - 🇺🇸US_365
+  - 🇯🇵-876
+  - US美国-881
   - 🇺🇸US_363
   - 🇺🇸US_372
   - 🇺🇸US_403
-  - US美国-881
-  - SG新加坡-889
-  - 🇺🇸-894
+  - US美国-894
+  - SG新加坡-901
+  - 🇺🇸-906
   - 🇺🇸US_507
   - US VLESS-67
   - 🇺🇸US_479
-  - US美国-900
-  - US美国-902
-  - 🇸🇬-905
-  - 美国(shop.tgaaaa.co-906
-  - HK香港-907
+  - US美国-912
+  - US美国-914
+  - 🇸🇬-918
+  - 美国(shop.tgaaaa.co-919
+  - HK香港-920
   - 🇺🇸US_577
   - 🇺🇸_US_美国->🇫🇮_FI_芬兰
-  - 🇯🇵-911
+  - 🇯🇵-924
   - 🇸🇬SG_19
   - 🇺🇸US_554
-  - US美国-917
+  - US美国-930
   - 🇸🇬SG_93
+  - US美国-939
   - 🇺🇸US_501
-  - JP日本-932
+  - JP日本-945
   - 🇸🇬SG_17
-  - 🇯🇵-938
-  - 🇸🇬-942
+  - 🇺🇸US_569
+  - 🇯🇵-952
+  - 🇸🇬-956
+  - JP日本-958
   - 🇯🇵JP_41
   - 🇺🇸US_153
-  - US美国-955
-  - 🇺🇸-956
-  - 🇺🇸-958
+  - US美国-969
+  - 🇺🇸-970
+  - 🇺🇸-972
   - US VLESS-64
+  - US美国-979
   - 🇺🇸US_59
-  - 🇭🇰-969
-  - 🇯🇵-971
-  - 🇺🇸-973
+  - 🇭🇰-984
+  - 🇯🇵-986
+  - 🇺🇸-988
   - 日本(shop.tgaaaa.co
   - 🇸🇬SG_88
   - 🇺🇸US_283
-  - US美国-984
+  - US美国-998
   - 🇺🇸US_553
   - 🇺🇸US_44
   - 🇺🇸US_389
-  - US美国-990
   - 🇯🇵JP_29
   - 🇯🇵JP_9
-  - US美国-998
-  - US美国-999
-  - 🇺🇸_US_美国-1001
+  - US美国-1011
+  - US美国-1012
+  - 🇺🇸_US_美国-1014
   - 🇺🇸US_521
-  - 🇺🇸-1009
+  - 🇺🇸-1022
   - 🇺🇸US_338
   - 🇺🇸US_371
   - 🇺🇸US_390
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
   - 🇯🇵JP_19
-  - US美国-1026
-  - 🇸🇬SG_69
-  - US美国-1038
+  - US美国-1039
   - US美国-1043
+  - 🇸🇬SG_69
+  - US美国-1051
+  - US美国-1055
+  - US美国-1057
   - 🇸🇬SG_90
-  - 🇺🇸_US_美国-1054
-  - 🇯🇵-1060
+  - 🇺🇸_US_美国-1068
+  - 🇯🇵-1074
   - 🇺🇸US_281
-  - US美国-1065
+  - US美国-1079
   - 🇺🇸US_64
-  - US美国-1067
+  - US美国-1081
   - 🇯🇵JP_5
   - 🇸🇬SG_31
   - 🇺🇸US_494
   - 🇺🇸US_469
   - 🇺🇸US_110
   - 🇺🇸US_236
-  - US美国-1096
+  - US美国-1109
   - 🇺🇸US_467
   - TW台湾
-  - US美国-1121
+  - US美国-1134
   - 🇹🇼TW_33
-  - 🇸🇬-1126
+  - 🇸🇬-1139
   - 🇺🇸US_38
-  - 🇭🇰-1135
+  - 🇭🇰-1148
   - 🇺🇸US_178
-  - 🇺🇸-1137
+  - 🇺🇸-1150
   - 🇸🇬SG_85
   - 🇺🇸US_545
-  - 🇭🇰-1155
+  - 🇭🇰-1169
   - 🇯🇵_JP_日本
   - 🇺🇸US_17
   - US VLESS-28
   - 🇺🇸US_580
-  - US美国-1186
-  - 🇺🇸_US_美国-1187
+  - 🇺🇸_US_美国-1201
   - 🇺🇸US_527
   - 🇹🇼TW_11
   - US VLESS-68
@@ -11961,156 +12517,174 @@ proxy-groups:
   - 🇹🇼TW_5
   - 🇺🇸US_394
   - US VLESS-76
-  - 🇺🇸-1215
-  - US美国-1218
+  - 🇺🇸-1228
+  - 🇭🇰HK_67
+  - US美国-1232
   - 🇸🇬SG_10
-  - 🇺🇸-1223
-  - 🇺🇸-1229
+  - 🇺🇸-1237
+  - 🇺🇸-1243
   - 🇺🇸US_271
-  - 🇯🇵-1242
-  - 🇺🇸-1247
+  - 🇯🇵-1256
+  - 🇺🇸-1261
   - 🇺🇸US_279
   - 🇺🇸US_369
-  - US美国-1261
-  - JP日本-1262
-  - 🇺🇸US_555
-  - US VLESS-50
-  - 🇯🇵-1271
-  - 🇹🇼TW_34
-  - US美国-1274
-  - 🇭🇰-1275
   - US美国-1276
+  - JP日本-1277
+  - 🇺🇸US_555
+  - 🇸🇬SG_80
+  - US VLESS-50
+  - 🇯🇵-1287
+  - 🇹🇼TW_34
+  - US美国-1290
+  - 🇭🇰-1291
+  - US美国-1292
   - HK VLESS-20
-  - JP日本-1279
-  - 🇸🇬-1283
+  - JP日本-1295
+  - 🇸🇬-1299
   - 🇺🇸US_56
   - 🇸🇬SG_65
   - 🇺🇸US_10
   - HK VLESS-51
-  - 🇭🇰-1312
+  - 🇱🇰
+  - 🇭🇰-1329
   - 🇯🇵JP_12
   - 🇸🇬SG_86
   - 🇺🇸US_125
   - 🇺🇸US_333
-  - SG新加坡-1329
+  - SG新加坡-1346
   - 🇸🇬SG_75
   - 🇭🇰HK_82
   - 🇺🇸US_567
   - 🇯🇵JP_6
   - 🇺🇸US_100
-  - US美国-1338
-  - SG新加坡-1340
-  - US美国-1347
+  - US美国-1356
+  - SG新加坡-1358
+  - US美国-1365
   - 🇺🇸US_39
   - 🇸🇬SG_71
   - US VLESS-10
   - 🇸🇬SG_7
-  - 🇺🇸-1362
-  - 🇺🇸-1364
-  - 🇺🇸-1365
+  - 🇺🇸-1379
+  - 🇺🇸-1381
+  - 🇺🇸-1382
   - 🇺🇸US_489
   - US VLESS-31
   - 🇺🇸US_309
   - 🇺🇸US_217
   - 🇺🇸US_583
-  - 🇺🇸美国-1391
-  - 🇭🇰-1394
-  - 🇸🇬-1396
+  - 🇺🇸美国-1410
+  - 🇭🇰-1413
+  - 🇸🇬-1416
+  - 🇯🇵JP-172.111.146.64-5659
+  - 🇺🇸US-198.98.53.130-5739
+  - 🇺🇸US-79.133.109.56-5056
+  - 🇯🇵JP-168.138.43.75-0160
+  - 🇭🇰HK-167.179.32.53-0055
+  - 🇭🇰HK-219.76.13.175-0053
+  - 🇭🇰HK-23.100.91.61-0051
+  - 🇭🇰HK-23.100.91.146-0049
+  - 🇭🇰HK-23.100.91.117-0047
+  - 🇭🇰HK-219.76.13.175-0044
+  - 🇭🇰HK-219.76.13.180-0042
+  - 🇭🇰HK-219.76.13.181-0041
+  - 🇯🇵JP-20.46.182.185-0038
+  - 🇭🇰HK-219.76.13.181-0037
+  - 🇸🇬SG-188.166.186.249-0036
   - 🇸🇬 SG新加坡
   - 🇺🇸 US美國
   - 🇭🇰HK香港丨
-  - 🇭🇰HK香港丨-1416
-  - US美国(mibei77.com 米贝节点分享)-1418
-  - US美国(mibei77.com 米贝节点分享)-1419
-  - US美国(mibei77.com 米贝节点分享)-1420
-  - US美国(mibei77.com 米贝节点分享)-1421
-  - US美国(mibei77.com 米贝节点分享)-1422
-  - US美国(mibei77.com 米贝节点分享)-1423
-  - US美国(mibei77.com 米贝节点分享)-1424
-  - US美国(mibei77.com 米贝节点分享)-1425
-  - US美国(mibei77.com 米贝节点分享)-1426
-  - US美国(mibei77.com 米贝节点分享)-1427
-  - US美国(mibei77.com 米贝节点分享)-1428
-  - US美国(mibei77.com 米贝节点分享)-1429
-  - US美国(mibei77.com 米贝节点分享)-1430
-  - US美国(mibei77.com 米贝节点分享)-1431
-  - US美国(mibei77.com 米贝节点分享)-1432
-  - US美国(mibei77.com 米贝节点分享)-1433
-  - US美国(mibei77.com 米贝节点分享)-1434
-  - US美国(mibei77.com 米贝节点分享)-1435
-  - US美国(mibei77.com 米贝节点分享)-1436
-  - US美国(mibei77.com 米贝节点分享)-1437
-  - US美国(mibei77.com 米贝节点分享)-1438
-  - US美国(mibei77.com 米贝节点分享)-1439
-  - US美国(mibei77.com 米贝节点分享)-1440
-  - US美国(mibei77.com 米贝节点分享)-1441
-  - US美国(mibei77.com 米贝节点分享)-1442
-  - US美国(mibei77.com 米贝节点分享)-1443
-  - US美国(mibei77.com 米贝节点分享)-1444
-  - US美国(mibei77.com 米贝节点分享)-1445
-  - US美国(mibei77.com 米贝节点分享)-1446
-  - US美国(mibei77.com 米贝节点分享)-1447
-  - US美国(mibei77.com 米贝节点分享)-1448
-  - US美国(mibei77.com 米贝节点分享)-1449
-  - US美国(mibei77.com 米贝节点分享)-1450
-  - US美国(mibei77.com 米贝节点分享)-1451
-  - US美国(mibei77.com 米贝节点分享)-1452
-  - US美国(mibei77.com 米贝节点分享)-1453
-  - US美国(mibei77.com 米贝节点分享)-1454
-  - US美国(mibei77.com 米贝节点分享)-1455
-  - US美国(mibei77.com 米贝节点分享)-1456
-  - US美国(mibei77.com 米贝节点分享)-1457
-  - US美国(mibei77.com 米贝节点分享)-1458
-  - US美国(mibei77.com 米贝节点分享)-1459
-  - US美国(mibei77.com 米贝节点分享)-1460
-  - US美国(mibei77.com 米贝节点分享)-1461
-  - US美国(mibei77.com 米贝节点分享)-1462
-  - US美国(mibei77.com 米贝节点分享)-1463
-  - US美国(mibei77.com 米贝节点分享)-1464
-  - US美国(mibei77.com 米贝节点分享)-1465
-  - US美国(mibei77.com 米贝节点分享)-1466
-  - US美国(mibei77.com 米贝节点分享)-1467
-  - US美国(mibei77.com 米贝节点分享)-1468
-  - US美国(mibei77.com 米贝节点分享)-1469
-  - US美国(mibei77.com 米贝节点分享)-1470
-  - US美国(mibei77.com 米贝节点分享)-1471
-  - US美国(mibei77.com 米贝节点分享)-1472
-  - US美国(mibei77.com 米贝节点分享)-1473
-  - US美国(mibei77.com 米贝节点分享)-1474
-  - US美国(mibei77.com 米贝节点分享)-1475
-  - US美国(mibei77.com 米贝节点分享)-1476
-  - US美国(mibei77.com 米贝节点分享)-1477
-  - US美国(mibei77.com 米贝节点分享)-1478
-  - US美国(mibei77.com 米贝节点分享)-1479
+  - 🇭🇰HK香港丨-1480
+  - US美国(mibei77.com 米贝节点分享)-1482
+  - US美国(mibei77.com 米贝节点分享)-1483
+  - US美国(mibei77.com 米贝节点分享)-1484
+  - US美国(mibei77.com 米贝节点分享)-1485
+  - US美国(mibei77.com 米贝节点分享)-1486
+  - US美国(mibei77.com 米贝节点分享)-1487
+  - US美国(mibei77.com 米贝节点分享)-1488
+  - US美国(mibei77.com 米贝节点分享)-1489
+  - US美国(mibei77.com 米贝节点分享)-1490
+  - US美国(mibei77.com 米贝节点分享)-1491
+  - US美国(mibei77.com 米贝节点分享)-1492
+  - US美国(mibei77.com 米贝节点分享)-1493
+  - US美国(mibei77.com 米贝节点分享)-1494
+  - US美国(mibei77.com 米贝节点分享)-1495
+  - US美国(mibei77.com 米贝节点分享)-1496
+  - US美国(mibei77.com 米贝节点分享)-1497
+  - US美国(mibei77.com 米贝节点分享)-1498
+  - US美国(mibei77.com 米贝节点分享)-1499
+  - US美国(mibei77.com 米贝节点分享)-1500
+  - US美国(mibei77.com 米贝节点分享)-1501
+  - US美国(mibei77.com 米贝节点分享)-1502
+  - US美国(mibei77.com 米贝节点分享)-1503
+  - US美国(mibei77.com 米贝节点分享)-1504
+  - US美国(mibei77.com 米贝节点分享)-1505
+  - US美国(mibei77.com 米贝节点分享)-1506
+  - US美国(mibei77.com 米贝节点分享)-1507
+  - US美国(mibei77.com 米贝节点分享)-1508
+  - US美国(mibei77.com 米贝节点分享)-1509
+  - US美国(mibei77.com 米贝节点分享)-1510
+  - US美国(mibei77.com 米贝节点分享)-1511
+  - US美国(mibei77.com 米贝节点分享)-1512
+  - US美国(mibei77.com 米贝节点分享)-1513
+  - US美国(mibei77.com 米贝节点分享)-1514
+  - US美国(mibei77.com 米贝节点分享)-1515
+  - US美国(mibei77.com 米贝节点分享)-1516
+  - US美国(mibei77.com 米贝节点分享)-1517
+  - US美国(mibei77.com 米贝节点分享)-1518
+  - US美国(mibei77.com 米贝节点分享)-1519
+  - US美国(mibei77.com 米贝节点分享)-1520
+  - US美国(mibei77.com 米贝节点分享)-1521
+  - US美国(mibei77.com 米贝节点分享)-1522
+  - US美国(mibei77.com 米贝节点分享)-1523
+  - US美国(mibei77.com 米贝节点分享)-1524
+  - US美国(mibei77.com 米贝节点分享)-1525
+  - US美国(mibei77.com 米贝节点分享)-1526
+  - US美国(mibei77.com 米贝节点分享)-1527
+  - US美国(mibei77.com 米贝节点分享)-1528
+  - US美国(mibei77.com 米贝节点分享)-1529
+  - US美国(mibei77.com 米贝节点分享)-1530
+  - US美国(mibei77.com 米贝节点分享)-1531
+  - US美国(mibei77.com 米贝节点分享)-1532
+  - US美国(mibei77.com 米贝节点分享)-1533
+  - US美国(mibei77.com 米贝节点分享)-1534
+  - US美国(mibei77.com 米贝节点分享)-1535
+  - US美国(mibei77.com 米贝节点分享)-1536
+  - US美国(mibei77.com 米贝节点分享)-1537
+  - US美国(mibei77.com 米贝节点分享)-1538
+  - US美国(mibei77.com 米贝节点分享)-1539
+  - US美国(mibei77.com 米贝节点分享)-1540
+  - US美国(mibei77.com 米贝节点分享)-1541
+  - US美国(mibei77.com 米贝节点分享)-1542
+  - US美国(mibei77.com 米贝节点分享)-1543
   - TW台湾(mibei77.com 米贝节点分享)
-  - TW台湾(mibei77.com 米贝节点分享)-1482
-  - TW台湾(mibei77.com 米贝节点分享)-1483
-  - TW台湾(mibei77.com 米贝节点分享)-1484
-  - SG新加坡(mibei77.com 米贝节点分享)-1485
-  - SG新加坡(mibei77.com 米贝节点分享)-1486
-  - SG新加坡(mibei77.com 米贝节点分享)-1487
-  - JP日本(mibei77.com 米贝节点分享)-1492
-  - JP日本(mibei77.com 米贝节点分享)-1493
-  - JP日本(mibei77.com 米贝节点分享)-1494
-  - JP日本(mibei77.com 米贝节点分享)-1495
-  - JP日本(mibei77.com 米贝节点分享)-1496
-  - JP日本(mibei77.com 米贝节点分享)-1497
-  - JP日本(mibei77.com 米贝节点分享)-1498
-  - JP日本(mibei77.com 米贝节点分享)-1499
-  - JP日本(mibei77.com 米贝节点分享)-1500
-  - HK香港(mibei77.com 米贝节点分享)-1506
-  - HK香港(mibei77.com 米贝节点分享)-1507
-  - HK香港(mibei77.com 米贝节点分享)-1508
-  - HK香港(mibei77.com 米贝节点分享)-1509
-  - HK香港(mibei77.com 米贝节点分享)-1510
-  - HK香港(mibei77.com 米贝节点分享)-1511
-  - HK香港(mibei77.com 米贝节点分享)-1512
-  - HK香港(mibei77.com 米贝节点分享)-1513
-  - HK香港(mibei77.com 米贝节点分享)-1514
-  - HK香港(mibei77.com 米贝节点分享)-1515
-  - HK香港(mibei77.com 米贝节点分享)-1516
-  - HK香港(mibei77.com 米贝节点分享)-1517
-  - HK香港(mibei77.com 米贝节点分享)-1518
+  - TW台湾(mibei77.com 米贝节点分享)-1546
+  - TW台湾(mibei77.com 米贝节点分享)-1547
+  - TW台湾(mibei77.com 米贝节点分享)-1548
+  - SG新加坡(mibei77.com 米贝节点分享)-1549
+  - SG新加坡(mibei77.com 米贝节点分享)-1550
+  - SG新加坡(mibei77.com 米贝节点分享)-1551
+  - JP日本(mibei77.com 米贝节点分享)-1556
+  - JP日本(mibei77.com 米贝节点分享)-1557
+  - JP日本(mibei77.com 米贝节点分享)-1558
+  - JP日本(mibei77.com 米贝节点分享)-1559
+  - JP日本(mibei77.com 米贝节点分享)-1560
+  - JP日本(mibei77.com 米贝节点分享)-1561
+  - JP日本(mibei77.com 米贝节点分享)-1562
+  - JP日本(mibei77.com 米贝节点分享)-1563
+  - JP日本(mibei77.com 米贝节点分享)-1564
+  - HK香港(mibei77.com 米贝节点分享)-1570
+  - HK香港(mibei77.com 米贝节点分享)-1571
+  - HK香港(mibei77.com 米贝节点分享)-1572
+  - HK香港(mibei77.com 米贝节点分享)-1573
+  - HK香港(mibei77.com 米贝节点分享)-1574
+  - HK香港(mibei77.com 米贝节点分享)-1575
+  - HK香港(mibei77.com 米贝节点分享)-1576
+  - HK香港(mibei77.com 米贝节点分享)-1577
+  - HK香港(mibei77.com 米贝节点分享)-1578
+  - HK香港(mibei77.com 米贝节点分享)-1579
+  - HK香港(mibei77.com 米贝节点分享)-1580
+  - HK香港(mibei77.com 米贝节点分享)-1581
+  - HK香港(mibei77.com 米贝节点分享)-1582
   - 香港 09
   - 香港 14
   - 香港 15
@@ -12377,9 +12951,9 @@ proxy-groups:
   - 🇺🇸US_859|265KB/s|B007-260618 01
   - 🇺🇸US_860|364KB/s|P001-260618 01
   - 🇺🇸US_861|453KB/s|R002-260618 01
-  - 🇺🇸_US_美国-3379
-  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
-  - 🇭🇰_HK_中国香港-3397
+  - 🇺🇸_US_美国-3443
+  - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡-3451
+  - 🇭🇰_HK_中国香港-3461
   - 🇺🇸_US_美国->🇩🇪_DE_德国
   - 未知 SS-305 | free-nodes
   - 未知 SS-452 | free-nodes
@@ -12396,7 +12970,6 @@ proxy-groups:
   - 未知 VMESS-1265 | free-nodes
   - 未知 VMESS-1266 | free-nodes
   - 未知 VMESS-1267 | free-nodes
-  - 未知 VMESS-1269 | free-nodes
   - 未知 VMESS-1271 | free-nodes
   - 未知 VMESS-1272 | free-nodes
   - 未知 VMESS-1273 | free-nodes
